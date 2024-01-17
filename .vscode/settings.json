@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Five Night at MakerSpace.sln"
+    "dotnet.defaultSolution": "Five-Night-at-MakerSpace.sln"
 }
