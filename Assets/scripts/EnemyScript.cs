@@ -9,6 +9,7 @@ using UnityEngine.UIElements;
 public class EnemyScript : MonoBehaviour
 {
     public List<GameObject> points = new();
+    public List<GameObject> JumpScarePoints;
     public int AI_Level;
     private int timer = 0;
     private int Ai_max = 20; 
@@ -22,12 +23,22 @@ if(CanChangePosition == true){
             transform.position = RandomPosition(points).transform.position;
         }
         timer -= timer;
+
+
 }
 
-
+JumpScareCheck();
 timer++;
 }
+}
+
+void JumpScareCheck(){
+    for(int i = 0; i < JumpScarePoints.Count; i++){
+        if(transform.position == JumpScarePoints[i].transform.position){
+            GetComponent<JumpScareScript>().JumpScare();
     }
+}
+} 
     GameObject RandomPosition(List<GameObject> points){
         //picks a random point in its list of walkable points
         int random = Random.Range(0,8);

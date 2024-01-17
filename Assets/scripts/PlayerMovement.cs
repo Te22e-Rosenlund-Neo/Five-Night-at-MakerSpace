@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
 
     public float PlayerHeight;
     public LayerMask Ground;
-    bool grounded;
     public float grounddrag;
 
 
@@ -25,9 +24,6 @@ public class PlayerMovement : MonoBehaviour
         rb.freezeRotation = true;
     }
     private void Update(){
-
-        grounded = Physics.Raycast(transform.position, Vector3.down, PlayerHeight * 0.5f + 0.2f, Ground);
-        Debug.DrawRay(transform.position, Vector3.down, Color.red);
 
         MyInput();
     }
