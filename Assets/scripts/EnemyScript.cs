@@ -19,7 +19,6 @@ public class EnemyScript : MonoBehaviour
 if(CanChangePosition == true){
     if(timer >= 360){
         if(ShouldSpawn(AI_Level, Ai_max) == true){
-            Debug.Log("I moved");
             transform.position = RandomPosition(points).transform.position;
         }
         timer -= timer;
@@ -45,6 +44,7 @@ void JumpScareCheck(){
         if(random == 0){
             
             GameObject Position = points[Random.Range(0, points.Count)];
+            Debug.Log("I moved");
             return Position;
         }else{
             return this.gameObject;

@@ -17,6 +17,11 @@ public class Door : MonoBehaviour
     }
     void FixedUpdate()
     {
+
+   
+        ManageDoor();
+
+
         // if(transform.position != Target){
         //     transform.position = Vector3.MoveTowards(transform.position, Target, 0.02f);
         // }
@@ -28,26 +33,29 @@ public class Door : MonoBehaviour
         {
             Target = Top;
             DoorOpen = true;
-            ManageDoor();
+     
         }
         else
         {
             Target = Bottom;
             DoorOpen = false;
+        
         }
     }
 
     void ManageDoor()
     {
         float t = 0;
+        Vector3 Current = transform.position;
+
         while (t < timeToOpen)
         {
-            transform.position = Vector3.Lerp(Bottom, Top, t);
+            transform.position = Vector3.Lerp(Current, Target, t%0.1f);
 
             t += Time.deltaTime;
         }
-    }
 
+    }
 }
 
 
