@@ -341,6 +341,7 @@ GameObject:
   - component: {fileID: 221208020}
   - component: {fileID: 221208019}
   - component: {fileID: 221208018}
+  - component: {fileID: 221208022}
   m_Layer: 0
   m_Name: "D\xF6rr"
   m_TagString: Untagged
@@ -434,6 +435,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &221208022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221208017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211fb058a78f5dc41abd8973296eed69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Top: {x: 3.9041, y: 5, z: 1.7715}
+  Bottom: {x: 3.9041, y: 1.71, z: 1.7715}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,6 +1159,7 @@ MonoBehaviour:
   playerCam: {fileID: 330585545}
   raycastlength: 10000000
   ButtonTag: button
+  button: {fileID: 1906290375}
   Door: {fileID: 221208017}
 --- !u!1 &1895168269
 GameObject:
