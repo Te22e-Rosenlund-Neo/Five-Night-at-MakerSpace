@@ -447,6 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211fb058a78f5dc41abd8973296eed69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToOpen: 2
   Top: {x: 3.9041, y: 5, z: 1.7715}
   Bottom: {x: 3.9041, y: 1.71, z: 1.7715}
 --- !u!1 &330585543

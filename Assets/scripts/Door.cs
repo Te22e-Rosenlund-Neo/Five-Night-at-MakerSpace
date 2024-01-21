@@ -10,54 +10,31 @@ public class Door : MonoBehaviour
     [Header("2 Door Positions")]
     [SerializeField] Vector3 Top;
     [SerializeField] Vector3 Bottom;
-    Vector3 Target;
-    void Awake()
-    {
-        Target = Bottom;
-    }
-    void FixedUpdate()
-    {
-
-   
-        ManageDoor();
-
-
-        // if(transform.position != Target){
-        //     transform.position = Vector3.MoveTowards(transform.position, Target, 0.02f);
-        // }
-    }
-
-    public void ToggleDoor()
-    {
-        if (DoorOpen == false)
-        {
-            Target = Top;
-            DoorOpen = true;
-     
+    float time = 0;
+  
+    void FixedUpdate(){
+        if(time < timeToOpen){
+            if(DoorOpen == false){
+                transform.position = Vector3.Lerp(Bottom, Top, time/timeToOpen);
+            }else{
+                transform.position = Vector3.Lerp(Top, Bottom, time/timeToOpen);
+            }
+            time += Time.deltaTime;
         }
-        else
-        {
-            Target = Bottom;
-            DoorOpen = false;
-        
-        }
-    }
+      
 
-    void ManageDoor()
+    
+}
+public void ToggleDoor()
     {
-        float t = 0;
-        Vector3 Current = transform.position;
-
-        while (t < timeToOpen)
-        {
-            transform.position = Vector3.Lerp(Current, Target, t%0.1f);
-
-            t += Time.deltaTime;
-        }
-
+     time = 0;
+     if(DoorOpen == false){
+        DoorOpen = true;
+     }else{
+        DoorOpen = false;
     }
 }
-
+}
 
 
 
