@@ -8,6 +8,11 @@ public class test : MonoBehaviour
 {
     public Camera cam1;
     public Camera cam2;
+    public Camera cam3;
+    public Camera cam4;
+    public Camera cam5;
+    public Camera cam6;
+
 
     public Camera PlayerCam;
     public Canvas canvas;
@@ -17,12 +22,18 @@ public class test : MonoBehaviour
     private bool CamOn = true;
     
     void Start(){
-        cam1.enabled = false;
-        cam2.enabled = false;
-        canvas.enabled = false;
-
+   
         AllCameras.Add(cam1);
         AllCameras.Add(cam2);
+        AllCameras.Add(cam3);
+        AllCameras.Add(cam4);
+        AllCameras.Add(cam5);
+        AllCameras.Add(cam6);
+        canvas.enabled = false;
+
+        foreach(Camera cam in AllCameras){
+            cam.enabled = false;
+        }
         AllCameras.Add(PlayerCam);
     }
     void Update(){
@@ -30,6 +41,8 @@ public class test : MonoBehaviour
             ToggleCam();
         }
     }
+    
+    
     public void ToggleCam(){
         if(CamOn == false){
             CamOn = true;
@@ -43,26 +56,45 @@ public class test : MonoBehaviour
             Player.GetComponent<PlayerMovement>().enabled = true;
         }
     }
-    
-    public void SwitchCam1(){
-
-        foreach(Camera cam in AllCameras){
+    void SwapCamVariableChange(){
+        foreach (Camera cam in AllCameras){
             cam.enabled = false;
         }
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+    
+    public void SwitchCam1(){
+
+        SwapCamVariableChange();
         cam1.enabled = true;
-        
-        
     }
     public void SwitchCam2(){
-        foreach(Camera cam in AllCameras){
-             cam.enabled = false;
-        }
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+
+        SwapCamVariableChange();
         cam2.enabled = true;
     }
+    public void SwitchCam3(){
+
+        SwapCamVariableChange();
+        cam3.enabled = true;
+    }
+    public void SwitchCam4(){
+
+        SwapCamVariableChange();
+        cam4.enabled = true;
+    }
+    public void SwitchCam5(){
+
+        SwapCamVariableChange();
+        cam5.enabled = true;
+    }
+    public void SwitchCam6(){
+
+        SwapCamVariableChange();
+        cam6.enabled = true;
+    }
+
     public void SwapToPlayerView(){
          foreach(Camera cam in AllCameras){
              cam.enabled = false;
