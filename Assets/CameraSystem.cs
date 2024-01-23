@@ -12,6 +12,7 @@ public class test : MonoBehaviour
     public Camera cam4;
     public Camera cam5;
     public Camera cam6;
+    public Camera cam7;
 
 
     public Camera PlayerCam;
@@ -19,7 +20,7 @@ public class test : MonoBehaviour
     public GameObject Player;
 
     List<Camera> AllCameras = new List<Camera>();
-    private bool CamOn = true;
+    private bool CamOn = false;
     
     void Start(){
    
@@ -29,6 +30,7 @@ public class test : MonoBehaviour
         AllCameras.Add(cam4);
         AllCameras.Add(cam5);
         AllCameras.Add(cam6);
+        AllCameras.Add(cam7);
         canvas.enabled = false;
 
         foreach(Camera cam in AllCameras){
@@ -42,7 +44,7 @@ public class test : MonoBehaviour
         }
     }
     
-    
+
     public void ToggleCam(){
         if(CamOn == false){
             CamOn = true;
@@ -93,6 +95,11 @@ public class test : MonoBehaviour
 
         SwapCamVariableChange();
         cam6.enabled = true;
+    }
+    public void SwitchCam7(){
+
+        SwapCamVariableChange();
+        cam7.enabled = true;
     }
 
     public void SwapToPlayerView(){
