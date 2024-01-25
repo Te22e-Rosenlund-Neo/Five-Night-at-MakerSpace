@@ -65,7 +65,10 @@ public class test : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+
     
+
+
     public void SwitchCam1(){
 
         SwapCamVariableChange();
