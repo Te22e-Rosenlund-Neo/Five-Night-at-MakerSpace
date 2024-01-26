@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 
@@ -48,7 +49,8 @@ public class test : MonoBehaviour
     public void ToggleCam(){
         if(CamOn == false){
             CamOn = true;
-            SwitchCam1();
+            SwapCamVariableChange();
+            cam1.enabled = true;
             canvas.enabled = true;
             Player.GetComponent<PlayerMovement>().enabled = false;
         }else{
@@ -66,44 +68,45 @@ public class test : MonoBehaviour
         Cursor.visible = true;
     }
 
-    
-
-
-    public void SwitchCam1(){
-
+    public void SwitchCam(int Camera){
         SwapCamVariableChange();
-        cam1.enabled = true;
+        AllCameras[Camera].enabled = true;
     }
-    public void SwitchCam2(){
+    // public void SwitchCam1(){
 
-        SwapCamVariableChange();
-        cam2.enabled = true;
-    }
-    public void SwitchCam3(){
+    //     SwapCamVariableChange();
+    //     cam1.enabled = true;
+    // }
+    // public void SwitchCam2(){
 
-        SwapCamVariableChange();
-        cam3.enabled = true;
-    }
-    public void SwitchCam4(){
+    //     SwapCamVariableChange();
+    //     cam2.enabled = true;
+    // }
+    // public void SwitchCam3(){
 
-        SwapCamVariableChange();
-        cam4.enabled = true;
-    }
-    public void SwitchCam5(){
+    //     SwapCamVariableChange();
+    //     cam3.enabled = true;
+    // }
+    // public void SwitchCam4(){
 
-        SwapCamVariableChange();
-        cam5.enabled = true;
-    }
-    public void SwitchCam6(){
+    //     SwapCamVariableChange();
+    //     cam4.enabled = true;
+    // }
+    // public void SwitchCam5(){
 
-        SwapCamVariableChange();
-        cam6.enabled = true;
-    }
-    public void SwitchCam7(){
+    //     SwapCamVariableChange();
+    //     cam5.enabled = true;
+    // }
+    // public void SwitchCam6(){
 
-        SwapCamVariableChange();
-        cam7.enabled = true;
-    }
+    //     SwapCamVariableChange();
+    //     cam6.enabled = true;
+    // }
+    // public void SwitchCam7(){
+
+    //     SwapCamVariableChange();
+    //     cam7.enabled = true;
+    // }
 
     public void SwapToPlayerView(){
          foreach(Camera cam in AllCameras){

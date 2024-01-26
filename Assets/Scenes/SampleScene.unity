@@ -412,12 +412,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 504647866}
         m_TargetAssemblyTypeName: test, Assembly-CSharp
-        m_MethodName: SwitchCam3
-        m_Mode: 1
+        m_MethodName: SwitchCam
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -873,7 +873,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295045422}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
@@ -989,12 +989,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 504647866}
         m_TargetAssemblyTypeName: test, Assembly-CSharp
-        m_MethodName: SwitchCam2
-        m_Mode: 1
+        m_MethodName: SwitchCam
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1532,12 +1532,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 504647866}
         m_TargetAssemblyTypeName: test, Assembly-CSharp
-        m_MethodName: SwitchCam6
-        m_Mode: 1
+        m_MethodName: SwitchCam
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1665,12 +1665,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 504647866}
         m_TargetAssemblyTypeName: test, Assembly-CSharp
-        m_MethodName: SwitchCam4
-        m_Mode: 1
+        m_MethodName: SwitchCam
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1847,12 +1847,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 504647866}
         m_TargetAssemblyTypeName: test, Assembly-CSharp
-        m_MethodName: SwitchCam7
-        m_Mode: 1
+        m_MethodName: SwitchCam
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1980,8 +1980,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 504647866}
         m_TargetAssemblyTypeName: test, Assembly-CSharp
-        m_MethodName: SwitchCam1
-        m_Mode: 1
+        m_MethodName: SwitchCam
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3810,12 +3810,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 504647866}
         m_TargetAssemblyTypeName: test, Assembly-CSharp
-        m_MethodName: SwitchCam5
-        m_Mode: 1
+        m_MethodName: SwitchCam
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
