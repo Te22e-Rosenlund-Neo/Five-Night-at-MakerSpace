@@ -72,41 +72,6 @@ public class test : MonoBehaviour
         SwapCamVariableChange();
         AllCameras[Camera].enabled = true;
     }
-    // public void SwitchCam1(){
-
-    //     SwapCamVariableChange();
-    //     cam1.enabled = true;
-    // }
-    // public void SwitchCam2(){
-
-    //     SwapCamVariableChange();
-    //     cam2.enabled = true;
-    // }
-    // public void SwitchCam3(){
-
-    //     SwapCamVariableChange();
-    //     cam3.enabled = true;
-    // }
-    // public void SwitchCam4(){
-
-    //     SwapCamVariableChange();
-    //     cam4.enabled = true;
-    // }
-    // public void SwitchCam5(){
-
-    //     SwapCamVariableChange();
-    //     cam5.enabled = true;
-    // }
-    // public void SwitchCam6(){
-
-    //     SwapCamVariableChange();
-    //     cam6.enabled = true;
-    // }
-    // public void SwitchCam7(){
-
-    //     SwapCamVariableChange();
-    //     cam7.enabled = true;
-    // }
 
     public void SwapToPlayerView(){
          foreach(Camera cam in AllCameras){
