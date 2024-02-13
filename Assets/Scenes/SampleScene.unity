@@ -235,8 +235,9 @@ MonoBehaviour:
   - {fileID: 1609338158}
   - {fileID: 579460042}
   JumpScarePoints: []
-  AI_Level: 2
-  CanChangePosition: 1
+  AI_Level: 10
+  MoveCheckDistance: 100000
+  StartTime: 3
 --- !u!136 &73264760
 CapsuleCollider:
   m_ObjectHideFlags: 0
