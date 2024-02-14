@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: {x: 0.25, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.485
+    m_Value: 0.22
   smoothness:
     m_OverrideState: 1
     m_Value: 1
@@ -43,7 +43,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.497
+    m_Value: 0.58
 --- !u!114 &-7007161514546018157
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -59,7 +59,7 @@ MonoBehaviour:
   active: 1
   temperature:
     m_OverrideState: 1
-    m_Value: 7
+    m_Value: 26
   tint:
     m_OverrideState: 0
     m_Value: -10
@@ -103,7 +103,7 @@ MonoBehaviour:
   active: 1
   distance:
     m_OverrideState: 1
-    m_Value: 0.335
+    m_Value: 0
   cropToFit:
     m_OverrideState: 0
     m_Value: 0.661
