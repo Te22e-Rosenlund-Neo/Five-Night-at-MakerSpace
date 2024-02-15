@@ -20,19 +20,23 @@ public class EnemyScript : MonoBehaviour
     {
         //sets enemy pos to be its start pos
         transform.position = points[0].transform.position;
+        transform.rotation = points[0].transform.rotation;
         timer = StartTime;
     }
 
     void Update()
     {
-        //checks if the timer for move is 0, then checks if it should move, then moves.
+
+        // checks if the timer for move is 0, then checks if it should move, then moves.
         if (timer <= 0)
         {
             timer = StartTime;
             if (ShouldMove() == true)
             {
+                GameObject moveto = RandomPosition(points);
+                transform.position = moveto.transform.position;
+                transform.rotation = moveto.transform.rotation;
 
-                transform.position = RandomPosition(points).transform.position;
 
                 foreach (GameObject JSP in JumpScarePoints)
                 {
