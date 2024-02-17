@@ -8,6 +8,7 @@ public class Button : MonoBehaviour
     public int raycastlength;
     public string ButtonTag;
     public GameObject button;
+    public GameObject Battery;
 
     public GameObject Door;
 
@@ -25,6 +26,7 @@ void Update(){
             if(Hit.transform == button.transform){
                 Debug.Log("HIT");
                 Door.GetComponent<Door>().ToggleDoor();
+                Battery.GetComponent<BatteryControlHub>().DoorClosed = !Battery.GetComponent<BatteryControlHub>().DoorClosed;
             }
         }
     }

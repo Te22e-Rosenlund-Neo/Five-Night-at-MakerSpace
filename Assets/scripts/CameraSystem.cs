@@ -14,6 +14,7 @@ public class test : MonoBehaviour
     public Camera cam5;
     public Camera cam6;
     public Camera cam7;
+    public GameObject Battery;
 
 
     public Camera PlayerCam;
@@ -47,6 +48,7 @@ public class test : MonoBehaviour
     
 
     public void ToggleCam(){
+    Battery.GetComponent<BatteryControlHub>().CamerasOpen =  !Battery.GetComponent<BatteryControlHub>().CamerasOpen;
         if(CamOn == false){
             CamOn = true;
             SwapCamVariableChange();
