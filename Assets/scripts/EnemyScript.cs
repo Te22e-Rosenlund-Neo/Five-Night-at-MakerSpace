@@ -63,15 +63,16 @@ public class EnemyScript : MonoBehaviour
     {
         //moves to a random target within the current nodes proximity by checking inside corresponding name
         //to keep track of which node we are at in the array, we connect target name to a name in points array and sets pos to that number
-    int Target = UnityEngine.Random.Range(0, SecondPoints[CurrentNode].SecPoints.Count-1);
+    int Target = UnityEngine.Random.Range(0, SecondPoints[CurrentNode].SecPoints.Count);
         GameObject NewPosition = SecondPoints[CurrentNode].SecPoints[Target];
-        CurrentNodeName = SecondPoints[CurrentNode].SecPoints[Target].transform.name;
-        for(int i = 0; i < points.Count; i++){
-            if(points[i].transform.name == CurrentNodeName){
+        for(int i = points.Count-1; i >= 0; i--){
+            if(points[i].transform.name == NewPosition.transform.name){
                 CurrentNode = i;
+                Debug.Log(transform.name + CurrentNode);
+                Debug.Log(transform.name + NewPosition.transform.name);
             }
         }
-        Debug.Log("I moved");
+        
 
         return NewPosition;
     }

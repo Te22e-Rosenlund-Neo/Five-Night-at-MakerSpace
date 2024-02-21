@@ -2250,6 +2250,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1952873058310346025, guid: 09621c2b403b3e54dafa5370c0509fd7, type: 3}
+--- !u!1 &372134483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 372134484}
+  m_Layer: 0
+  m_Name: HugoPoint10
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &372134484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372134483}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7123936, z: 0, w: 0.7017802}
+  m_LocalPosition: {x: 13.91, y: 60.66, z: -0.92}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1488397052}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.86, z: 0}
 --- !u!1 &374688808 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2535417080283370500, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -3687,6 +3718,8 @@ Transform:
   - {fileID: 602908448}
   - {fileID: 1864209969}
   - {fileID: 258584079}
+  - {fileID: 1205709772}
+  - {fileID: 1327985926}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622675531 stripped
@@ -6613,6 +6646,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4204735929693592162, guid: 09621c2b403b3e54dafa5370c0509fd7, type: 3}
+--- !u!1 &1205709771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1205709772}
+  m_Layer: 0
+  m_Name: NeoPoint10
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1205709772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205709771}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.6983403, z: 0, w: 0.7157659}
+  m_LocalPosition: {x: -17.41, y: 60.66, z: -24.97}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605646818}
+  m_LocalEulerAnglesHint: {x: 0, y: -88.588, z: 0}
 --- !u!1 &1205914810 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8704340497552031087, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -7268,6 +7332,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: -162.567, z: 0}
+--- !u!1 &1327985925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1327985926}
+  m_Layer: 0
+  m_Name: NeoPoint11
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1327985926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327985925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.6983403, z: 0, w: 0.7157659}
+  m_LocalPosition: {x: -29.3, y: 60.66, z: 9.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605646818}
+  m_LocalEulerAnglesHint: {x: 0, y: -88.588, z: 0}
 --- !u!1 &1329483258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6137170216259105488, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -8193,6 +8288,7 @@ Transform:
   - {fileID: 1326863752}
   - {fileID: 323571122}
   - {fileID: 1964304952}
+  - {fileID: 372134484}
   - {fileID: 1255777397}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8359,44 +8455,65 @@ MonoBehaviour:
   - {fileID: 1864209968}
   - {fileID: 19917150}
   - {fileID: 258584078}
+  - {fileID: 1205709771}
+  - {fileID: 1327985925}
   SecondPoints:
   - SecPoints:
-    - {fileID: 1257195517}
-    - {fileID: 1257686152}
+    - {fileID: 602908447}
     - {fileID: 258584078}
+    - {fileID: 1368955820}
+    - {fileID: 1257195517}
   - SecPoints:
     - {fileID: 880030439}
     - {fileID: 258584078}
+    - {fileID: 1368955820}
   - SecPoints:
     - {fileID: 1596354875}
     - {fileID: 41960232}
-    - {fileID: 19917150}
-  - SecPoints:
-    - {fileID: 1257686152}
     - {fileID: 602908447}
+    - {fileID: 1327985925}
     - {fileID: 1864209968}
+  - SecPoints:
+    - {fileID: 1257686152}
+    - {fileID: 1864209968}
+    - {fileID: 1327985925}
     - {fileID: 19917150}
   - SecPoints:
     - {fileID: 1257686152}
-    - {fileID: 880030439}
     - {fileID: 1596354875}
+    - {fileID: 1327985925}
   - SecPoints:
-    - {fileID: 258584078}
+    - {fileID: 1257195517}
     - {fileID: 880030439}
-    - {fileID: 1257686152}
+    - {fileID: 258584078}
+    - {fileID: 602908447}
   - SecPoints:
+    - {fileID: 1257686152}
     - {fileID: 1864209968}
     - {fileID: 258584078}
-    - {fileID: 1257686152}
+    - {fileID: 1205709771}
   - SecPoints:
-    - {fileID: 19917150}
+    - {fileID: 1327985925}
+    - {fileID: 602908447}
     - {fileID: 1596354875}
-    - {fileID: 1257686152}
+    - {fileID: 1205709771}
+    - {fileID: 19917150}
   - SecPoints:
     - {fileID: 880030439}
     - {fileID: 1257195517}
     - {fileID: 1257686152}
+    - {fileID: 1368955820}
     - {fileID: 602908447}
+  - SecPoints:
+    - {fileID: 258584078}
+    - {fileID: 1864209968}
+    - {fileID: 602908447}
+    - {fileID: 1596354875}
+  - SecPoints:
+    - {fileID: 880030439}
+    - {fileID: 1257686152}
+    - {fileID: 1596354875}
+    - {fileID: 41960232}
   JumpScarePoints:
   - {fileID: 19917150}
   AI_Level: 3
@@ -8673,20 +8790,22 @@ MonoBehaviour:
   - {fileID: 1944811568}
   - {fileID: 1326863751}
   - {fileID: 1255777396}
+  - {fileID: 372134483}
+  - {fileID: 323571121}
+  - {fileID: 1964304951}
   SecondPoints:
   - SecPoints:
     - {fileID: 120501603}
-    - {fileID: 1964304951}
-    - {fileID: 1427528491}
-  - SecPoints:
-    - {fileID: 1619421614}
-    - {fileID: 1964304951}
-    - {fileID: 1964304951}
-    - {fileID: 1964304951}
-    - {fileID: 1964304951}
-  - SecPoints:
-    - {fileID: 1619421614}
     - {fileID: 1944811568}
+    - {fileID: 1964304951}
+    - {fileID: 372134483}
+  - SecPoints:
+    - {fileID: 1619421614}
+    - {fileID: 799826526}
+    - {fileID: 1964304951}
+    - {fileID: 372134483}
+  - SecPoints:
+    - {fileID: 1619421614}
     - {fileID: 323571121}
     - {fileID: 1964304951}
   - SecPoints:
@@ -8694,31 +8813,35 @@ MonoBehaviour:
     - {fileID: 1944811568}
     - {fileID: 1326863751}
     - {fileID: 323571121}
+    - {fileID: 1964304951}
   - SecPoints:
     - {fileID: 1382793209}
     - {fileID: 1944811568}
     - {fileID: 1326863751}
   - SecPoints:
+    - {fileID: 1619421614}
     - {fileID: 1382793209}
     - {fileID: 1326863751}
     - {fileID: 1964304951}
   - SecPoints:
+    - {fileID: 799826526}
     - {fileID: 1382793209}
-    - {fileID: 1964304951}
-    - {fileID: 1326863751}
-  - SecPoints:
-    - {fileID: 799826526}
-    - {fileID: 799826526}
-    - {fileID: 1964304951}
-    - {fileID: 1326863751}
-  - SecPoints:
-    - {fileID: 799826526}
     - {fileID: 1944811568}
-    - {fileID: 1382793209}
+    - {fileID: 323571121}
+    - {fileID: 1255777396}
+  - SecPoints:
+    - {fileID: 799826526}
+    - {fileID: 1326863751}
+    - {fileID: 1255777396}
+  - SecPoints:
+    - {fileID: 1619421614}
     - {fileID: 120501603}
-    - {fileID: 1619421614}
     - {fileID: 799826526}
     - {fileID: 1944811568}
+  - SecPoints:
+    - {fileID: 1619421614}
+    - {fileID: 120501603}
+    - {fileID: 1964304951}
   JumpScarePoints:
   - {fileID: 1255777396}
   AI_Level: 7
