@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,9 +11,11 @@ using UnityEngine.UIElements;
 public class SecondaryPoints{
     public List<GameObject> SecPoints = new();
 }
+
 public class EnemyScript : MonoBehaviour
 {
     public List<GameObject> points = new();
+    
 
     public List<SecondaryPoints> SecondPoints = new();
     public List<GameObject> JumpScarePoints;
@@ -23,12 +26,15 @@ public class EnemyScript : MonoBehaviour
 
     int CurrentNode;
     string CurrentNodeName;
+
     void Awake()
     {
         //sets enemy pos to be its start pos
         transform.position = points[0].transform.position;
         transform.rotation = points[0].transform.rotation;
+        CurrentNode = 0;
         timer = StartTime;
+
     }
 
     void Update()
@@ -40,9 +46,9 @@ public class EnemyScript : MonoBehaviour
             timer = StartTime;
             if (ShouldMove() == true)
             {
-                GameObject moveto = RandomPosition();
-                transform.position = moveto.transform.position;
-                transform.rotation = moveto.transform.rotation;
+                Transform moveto = RandomPosition();
+                transform.position = moveto.position;
+                transform.rotation = moveto.rotation;
 
 
                 foreach (GameObject JSP in JumpScarePoints)
@@ -59,21 +65,16 @@ public class EnemyScript : MonoBehaviour
     }
 
     //randomizes what way the enemy moves 
-    GameObject RandomPosition()
+    Transform RandomPosition()
     {
-        //moves to a random target within the current nodes proximity by checking inside corresponding name
-        //to keep track of which node we are at in the array, we connect target name to a name in points array and sets pos to that number
-    int Target = UnityEngine.Random.Range(0, SecondPoints[CurrentNode].SecPoints.Count);
-        GameObject NewPosition = SecondPoints[CurrentNode].SecPoints[Target];
-        for(int i = points.Count-1; i >= 0; i--){
-            if(points[i].transform.name == NewPosition.transform.name){
-                CurrentNode = i;
-                Debug.Log(transform.name + CurrentNode);
-                Debug.Log(transform.name + NewPosition.transform.name);
+        int RandomTarget = UnityEngine.Random.Range(0, SecondPoints[CurrentNode].SecPoints.Count);
+        Transform NewPosition = SecondPoints[CurrentNode].SecPoints[CurrentNode].transform;
+
+        foreach(GameObject tr in SecondPoints[CurrentNode].SecPoints){
+            if(tr.transform == NewPosition){
+                
             }
         }
-        
-
         return NewPosition;
     }
 
@@ -93,5 +94,6 @@ public class EnemyScript : MonoBehaviour
     }
 
 }
+
 
 
