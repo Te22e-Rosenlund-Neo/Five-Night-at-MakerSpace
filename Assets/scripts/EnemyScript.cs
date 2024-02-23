@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -68,13 +67,15 @@ public class EnemyScript : MonoBehaviour
     Transform RandomPosition()
     {
         int RandomTarget = UnityEngine.Random.Range(0, SecondPoints[CurrentNode].SecPoints.Count);
-        Transform NewPosition = SecondPoints[CurrentNode].SecPoints[CurrentNode].transform;
+        Transform NewPosition = SecondPoints[CurrentNode].SecPoints[RandomTarget].transform;
 
-        foreach(GameObject tr in SecondPoints[CurrentNode].SecPoints){
-            if(tr.transform == NewPosition){
-                
+        for(int i = 0; i < points.Count-1; i++){
+            if(points[i].transform == NewPosition.transform){
+                CurrentNode = i;
             }
         }
+        // Debug.Log(transform.name + CurrentNode);
+        // Debug.Log(transform.name + NewPosition);
         return NewPosition;
     }
 
