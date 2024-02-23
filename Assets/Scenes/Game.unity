@@ -2960,6 +2960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 477356833}
   - component: {fileID: 477356832}
+  - component: {fileID: 477356834}
   m_Layer: 0
   m_Name: ElectronicsBattery
   m_TagString: Untagged
@@ -3001,6 +3002,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &477356834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477356831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21abd41717b236141821e2d4fa2e6d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChangeCam: {fileID: 1101676373}
+  Player: {fileID: 280725147}
 --- !u!1 &490067078 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -548217067281123513, guid: 09621c2b403b3e54dafa5370c0509fd7,

@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 public class Door : MonoBehaviour
 {
-    bool DoorOpen = false;
+    public bool DoorOpen = false;
     [SerializeField] float timeToOpen;
     [Header("2 Door Positions")]
     [SerializeField] Vector3 Top;

@@ -17,7 +17,8 @@ public class EnemyScript : MonoBehaviour
     
 
     public List<SecondaryPoints> SecondPoints = new();
-    public List<GameObject> JumpScarePoints;
+    public Transform JumpScareNode;
+    public GameObject Door;
     public int AI_Level;
 
     public float StartTime;
@@ -50,13 +51,12 @@ public class EnemyScript : MonoBehaviour
                 transform.rotation = moveto.rotation;
 
 
-                foreach (GameObject JSP in JumpScarePoints)
-                {
-                    if (JSP.transform.position == transform.position)
+                
+                    if (JumpScareNode.position == transform.position)
                     {
                         GetComponent<JumpScareScript>().JumpScare();
                     }
-                }
+                
             }
         }
 
@@ -71,9 +71,14 @@ public class EnemyScript : MonoBehaviour
 
         for(int i = 0; i < points.Count-1; i++){
             if(points[i].transform == NewPosition.transform){
-                CurrentNode = i;
+                if(NewPosition.position == JumpScareNode.position && Door.GetComponent<Door>().DoorOpen == false){
+                    CurrentNode = i;
+            }else{
+                NewPosition.position = transform.position;
             }
         }
+        }
+
         // Debug.Log(transform.name + CurrentNode);
         // Debug.Log(transform.name + NewPosition);
         return NewPosition;

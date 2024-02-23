@@ -43,6 +43,10 @@ public class BatteryControlHub : MonoBehaviour
             timesincestart = timer;
         }
 timesincestart -= Time.deltaTime;
+
+          if(BatteryLevel <= 0){
+               GetComponent<GameOverScenario>().ShutOff();
+          }
     }
 
 
