@@ -13,6 +13,7 @@ public class SecondaryPoints{
 
 public class EnemyScript : MonoBehaviour
 {
+
     public List<GameObject> points = new();
     
 
@@ -71,11 +72,16 @@ public class EnemyScript : MonoBehaviour
 
         for(int i = 0; i < points.Count-1; i++){
             if(points[i].transform == NewPosition.transform){
-                if(NewPosition.position == JumpScareNode.position && Door.GetComponent<Door>().DoorOpen == false){
-                    CurrentNode = i;
-            }else{
-                NewPosition.position = transform.position;
-            }
+                    if(NewPosition == JumpScareNode){
+                        if(Door.GetComponent<Door>().DoorOpen == true){
+                            NewPosition = transform;
+                            Debug.Log("failed entry to player (closed door)");
+                        }else{
+                            transform.GetComponent<JumpScareScript>().JumpScare();
+                        }
+                    }else{
+                        CurrentNode = i;
+                    }
         }
         }
 
