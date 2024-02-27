@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.Rendering.LookDev;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class test : MonoBehaviour
 {
@@ -18,7 +19,9 @@ public class test : MonoBehaviour
 
 
     public Camera PlayerCam;
-    public Canvas canvas;
+
+    public GameObject CamPanel;
+    
     public GameObject Player;
 
     List<Camera> AllCameras = new List<Camera>();
@@ -33,7 +36,7 @@ public class test : MonoBehaviour
         AllCameras.Add(cam5);
         AllCameras.Add(cam6);
         AllCameras.Add(cam7);
-        canvas.enabled = false;
+        CamPanel.SetActive(false);
 
         foreach(Camera cam in AllCameras){
             cam.enabled = false;
@@ -53,12 +56,12 @@ public class test : MonoBehaviour
             CamOn = true;
             SwapCamVariableChange();
             cam1.enabled = true;
-            canvas.enabled = true;
+            CamPanel.SetActive(true);
             Player.GetComponent<PlayerMovement>().enabled = false;
         }else{
             CamOn = false;
             SwapToPlayerView();
-            canvas.enabled = false;
+            CamPanel.SetActive(false);
             Player.GetComponent<PlayerMovement>().enabled = true;
         }
     }

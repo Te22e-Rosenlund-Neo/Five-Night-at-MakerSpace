@@ -13,6 +13,8 @@ public Camera playerCam;
 
 public GameObject Player;
 
+public GameObject ScareFolder;
+
 public GameObject Enemy;
 
 public int raycastlength;
@@ -30,15 +32,13 @@ if(start == true){
         if(Physics.Raycast(ray, out Hit ,raycastlength)){
           Debug.Log(Hit.transform.name);
             if(Hit.transform == Enemy.transform){
-                Debug.Log("Death");
-                Player.GetComponent<PlayerMovement>().enabled = false;
+                DeathScene();
             }
               
         }
   //if player hasn't looked at enemy within 10seconds, he dies anyway
         if(timer <= 0){
-          Debug.Log("timed out, death");
-          Player.GetComponent<PlayerMovement>().enabled = false;
+          DeathScene();
         }
 
 timer -= Time.deltaTime;
@@ -48,6 +48,12 @@ timer -= Time.deltaTime;
 public void JumpScare(){
    start = true;
    GetComponent<EnemyScript>().enabled = false;
+}
+void DeathScene(){
+    animator.SetBool("Death", true);
+    ScareFolder.SetActive(true);
+    Debug.Log("Death");
+    Player.GetComponent<PlayerMovement>().enabled = false;
 }
 
 }
