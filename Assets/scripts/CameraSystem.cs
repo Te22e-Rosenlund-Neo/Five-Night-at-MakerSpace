@@ -6,7 +6,7 @@ using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class test : MonoBehaviour
+public class CameraSystem : MonoBehaviour
 {
     public Camera cam1;
     public Camera cam2;
@@ -25,7 +25,7 @@ public class test : MonoBehaviour
     public GameObject Player;
 
     List<Camera> AllCameras = new List<Camera>();
-    private bool CamOn = false;
+    public bool CamOn = false;
     
     void Start(){
    

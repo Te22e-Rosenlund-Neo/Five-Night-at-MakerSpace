@@ -22,7 +22,7 @@ public class BatteryControlHub : MonoBehaviour
     public TMP_Text BatteryDisplayText;
     public TMP_Text TimeText;
 
-//max time is 600s
+//max time is 360s
     public float ClockTime = 0;
     
     public float timer = 1;
@@ -33,6 +33,7 @@ public class BatteryControlHub : MonoBehaviour
     }
     void Update(){
      DisplayBattery();
+     DisplayTime();
         if(CamerasOpen == true){
              Cam = 1;
         }else{
@@ -67,7 +68,7 @@ ClockTime += Time.deltaTime;
           BatteryDisplayText.text = value + "%";
     }
     void DisplayTime(){
-     float newvalue = MathF.Floor(ClockTime*0.01f);
+     float newvalue = Mathf.Floor(ClockTime/60);
           TimeText.text = newvalue + "AM";
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using NUnit.Framework.Internal;
 using UnityEngine;
 
 public class JumpScareScript : MonoBehaviour
@@ -15,7 +16,7 @@ public GameObject Player;
 
 public GameObject ScareFolder;
 
-public GameObject Enemy;
+public GameObject ChangeCamera;
 
 public int raycastlength;
 
@@ -26,15 +27,10 @@ void Update(){
   //if countdown to death is starting
 if(start == true){
       Debug.Log("Starting timer for death");
-      Ray ray = playerCam.ScreenPointToRay(Input.mousePosition);
-        RaycastHit Hit;
-  //if player looks at enemy, he dies
-        if(Physics.Raycast(ray, out Hit ,raycastlength)){
-          Debug.Log(Hit.transform.name);
-            if(Hit.transform == Enemy.transform){
-                DeathScene();
-            }
-              
+      
+  //if player looks at camera, death is postponed
+        if(ChangeCamera.GetComponent<CameraSystem>().CamOn == false){
+          DeathScene();
         }
   //if player hasn't looked at enemy within 10seconds, he dies anyway
         if(timer <= 0){

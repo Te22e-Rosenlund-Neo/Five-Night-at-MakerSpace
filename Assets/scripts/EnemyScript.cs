@@ -21,6 +21,7 @@ public class EnemyScript : MonoBehaviour
     public Transform JumpScareNode;
     public GameObject Door;
     public int AI_Level;
+    public GameObject moveto;
 
     public float StartTime;
     private float timer;
@@ -40,6 +41,8 @@ public class EnemyScript : MonoBehaviour
 
     void Update()
     {
+        transform.position = moveto.transform.position;
+        transform.rotation = moveto.transform.rotation;
 
         // checks if the timer for move is 0, then checks if it should move, then moves.
         if (timer <= 0)
