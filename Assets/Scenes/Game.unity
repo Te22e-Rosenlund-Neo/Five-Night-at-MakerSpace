@@ -302,6 +302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 19917151}
+  - component: {fileID: 19917152}
   m_Layer: 0
   m_Name: NeoJumpscarePoint
   m_TagString: Untagged
@@ -324,6 +325,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: 18.579, z: 0}
+--- !u!114 &19917152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19917150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &22105584 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7645882694643820382, guid: 81d69a073bf9ef74f93a148c2a5d2082,
@@ -445,6 +459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 41960233}
+  - component: {fileID: 41960234}
   m_Layer: 0
   m_Name: NeoPoint5
   m_TagString: Untagged
@@ -467,6 +482,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: 86.834, z: 0}
+--- !u!114 &41960234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41960232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &44209820
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 52247489}
+  - component: {fileID: 52247490}
   m_Layer: 0
   m_Name: SamPoint2
   m_TagString: Untagged
@@ -619,13 +648,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52247488}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2140193, z: -0, w: 0.97682947}
+  m_LocalRotation: {x: 0, y: 0.6243091, z: 0, w: 0.78117746}
   m_LocalPosition: {x: 10.21, y: 62.19, z: -2.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978319562}
-  m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 77.263, z: 0}
+--- !u!114 &52247490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52247488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &61245284 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1930272247840340380, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -957,6 +999,10 @@ MonoBehaviour:
   - {fileID: 1099342859}
   - {fileID: 171737113}
   - {fileID: 1067121268}
+  - {fileID: 1449286081}
+  - {fileID: 920678000}
+  - {fileID: 1880305729}
+  - {fileID: 1100045313}
   SecondPoints:
   - SecPoints:
     - {fileID: 52247488}
@@ -1105,6 +1151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 91111852}
+  - component: {fileID: 91111853}
   m_Layer: 0
   m_Name: SamPoint4
   m_TagString: Untagged
@@ -1120,13 +1167,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91111851}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2140193, z: -0, w: 0.97682947}
+  m_LocalRotation: {x: 0, y: 0.9848985, z: 0, w: 0.17313263}
   m_LocalPosition: {x: -12.27, y: 62.19, z: -22.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978319562}
-  m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 160.06, z: 0}
+--- !u!114 &91111853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91111851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1001 &91576896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1347,6 +1407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 120501604}
+  - component: {fileID: 120501605}
   m_Layer: 0
   m_Name: HugoPoint2
   m_TagString: Untagged
@@ -1369,6 +1430,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: 90.86, z: 0}
+--- !u!114 &120501605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120501603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &122194439 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3071556778672406275, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -1434,6 +1508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 171737114}
+  - component: {fileID: 171737115}
   m_Layer: 0
   m_Name: SamPoint6
   m_TagString: Untagged
@@ -1449,13 +1524,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171737113}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2140193, z: -0, w: 0.97682947}
+  m_LocalRotation: {x: 0, y: 0.42472088, z: 0, w: 0.9053244}
   m_LocalPosition: {x: -15.32, y: 62.19, z: 3.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978319562}
-  m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 50.266, z: 0}
+--- !u!114 &171737115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171737113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &177859134
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,6 +2196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 258584079}
+  - component: {fileID: 258584080}
   m_Layer: 0
   m_Name: NeoPoint9
   m_TagString: Untagged
@@ -2130,6 +2219,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: -88.588, z: 0}
+--- !u!114 &258584080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258584078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1001 &263665067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2597,6 +2699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 323571122}
+  - component: {fileID: 323571123}
   m_Layer: 0
   m_Name: HugoPoint8
   m_TagString: Untagged
@@ -2619,6 +2722,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: -162.567, z: 0}
+--- !u!114 &323571123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323571121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &326001780 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6036828632970904540, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -2936,6 +3052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 372134484}
+  - component: {fileID: 372134485}
   m_Layer: 0
   m_Name: HugoPoint10
   m_TagString: Untagged
@@ -2958,6 +3075,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: 90.86, z: 0}
+--- !u!114 &372134485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372134483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &374688808 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2535417080283370500, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -3664,7 +3794,7 @@ Transform:
   m_GameObject: {fileID: 471436167}
   serializedVersion: 2
   m_LocalRotation: {x: 0.16595808, y: -0.39622045, z: 0.059835725, w: 0.90104777}
-  m_LocalPosition: {x: 17.284, y: 1.864, z: -16.047}
+  m_LocalPosition: {x: 17.284, y: 1.71, z: -16.047}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4490,6 +4620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 602908448}
+  - component: {fileID: 602908449}
   m_Layer: 0
   m_Name: NeoPoint7
   m_TagString: Untagged
@@ -4512,6 +4643,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: -176.35, z: 0}
+--- !u!114 &602908449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602908447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &605646817
 GameObject:
   m_ObjectHideFlags: 0
@@ -5334,6 +5478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 799826527}
+  - component: {fileID: 799826528}
   m_Layer: 0
   m_Name: HugoPoint3
   m_TagString: Untagged
@@ -5356,6 +5501,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: 84.516, z: 0}
+--- !u!114 &799826528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799826526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &800780235 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3190962382857247531, guid: 81d69a073bf9ef74f93a148c2a5d2082,
@@ -5622,6 +5780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 880030440}
+  - component: {fileID: 880030441}
   m_Layer: 0
   m_Name: NeoPoint1
   m_TagString: Untagged
@@ -5644,6 +5803,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: 155.687, z: 0}
+--- !u!114 &880030441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880030439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &882085098
 GameObject:
   m_ObjectHideFlags: 0
@@ -6249,6 +6421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 920678001}
+  - component: {fileID: 920678002}
   m_Layer: 0
   m_Name: SamPointVent2
   m_TagString: Untagged
@@ -6271,6 +6444,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1978319562}
   m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+--- !u!114 &920678002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920678000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &923215488 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -313075708122977810, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -7230,6 +7416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1067121269}
+  - component: {fileID: 1067121270}
   m_Layer: 0
   m_Name: SamPoint7
   m_TagString: Untagged
@@ -7245,13 +7432,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067121268}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2140193, z: -0, w: 0.97682947}
+  m_LocalRotation: {x: 0, y: -0.6860723, z: 0, w: 0.72753334}
   m_LocalPosition: {x: -21.47, y: 62.19, z: -2.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978319562}
-  m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -86.64, z: 0}
+--- !u!114 &1067121270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067121268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1086870921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1602846905682975345, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -7457,6 +7657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1099342860}
+  - component: {fileID: 1099342861}
   m_Layer: 0
   m_Name: SamPoint5
   m_TagString: Untagged
@@ -7472,13 +7673,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099342859}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2140193, z: -0, w: 0.97682947}
+  m_LocalRotation: {x: 0, y: -0.62917113, z: 0, w: 0.77726686}
   m_LocalPosition: {x: -15.05, y: 62.19, z: -9.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978319562}
-  m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -77.978, z: 0}
+--- !u!114 &1099342861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099342859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1100045313
 GameObject:
   m_ObjectHideFlags: 0
@@ -7488,6 +7702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1100045314}
+  - component: {fileID: 1100045315}
   m_Layer: 0
   m_Name: JumpScarePoint
   m_TagString: Untagged
@@ -7503,13 +7718,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100045313}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2140193, z: -0, w: 0.97682947}
+  m_LocalRotation: {x: 0, y: -0.6706855, z: 0, w: 0.74174184}
   m_LocalPosition: {x: -24.94, y: 62.19, z: -2.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978319562}
-  m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -84.24, z: 0}
+--- !u!114 &1100045315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100045313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1101676373
 GameObject:
   m_ObjectHideFlags: 0
@@ -7911,6 +8139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1205709772}
+  - component: {fileID: 1205709773}
   m_Layer: 0
   m_Name: NeoPoint10
   m_TagString: Untagged
@@ -7933,6 +8162,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: -88.588, z: 0}
+--- !u!114 &1205709773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205709771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1205914810 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8704340497552031087, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -8162,6 +8404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1255777397}
+  - component: {fileID: 1255777398}
   m_Layer: 0
   m_Name: hugoJumpscarePoint
   m_TagString: Untagged
@@ -8184,6 +8427,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: 74.566, z: 0}
+--- !u!114 &1255777398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255777396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1257195517
 GameObject:
   m_ObjectHideFlags: 0
@@ -8193,6 +8449,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1257195518}
+  - component: {fileID: 1257195519}
   m_Layer: 0
   m_Name: NeoPoint2
   m_TagString: Untagged
@@ -8215,6 +8472,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: -88.588, z: 0}
+--- !u!114 &1257195519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257195517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1257686152
 GameObject:
   m_ObjectHideFlags: 0
@@ -8224,6 +8494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1257686153}
+  - component: {fileID: 1257686154}
   m_Layer: 0
   m_Name: NeoPoint3
   m_TagString: Untagged
@@ -8246,6 +8517,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: 81.29, z: 0}
+--- !u!114 &1257686154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257686152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1263678269
 GameObject:
   m_ObjectHideFlags: 0
@@ -8702,6 +8986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1326863752}
+  - component: {fileID: 1326863753}
   m_Layer: 0
   m_Name: HugoPoint7
   m_TagString: Untagged
@@ -8724,6 +9009,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: -162.567, z: 0}
+--- !u!114 &1326863753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326863751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1327985925
 GameObject:
   m_ObjectHideFlags: 0
@@ -8733,6 +9031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1327985926}
+  - component: {fileID: 1327985927}
   m_Layer: 0
   m_Name: NeoPoint11
   m_TagString: Untagged
@@ -8755,6 +9054,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: -88.588, z: 0}
+--- !u!114 &1327985927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327985925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1329483258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6137170216259105488, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -8792,6 +9104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1339099507}
+  - component: {fileID: 1339099508}
   m_Layer: 0
   m_Name: SamPoint1
   m_TagString: Untagged
@@ -8807,13 +9120,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339099506}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2140193, z: -0, w: 0.97682947}
+  m_LocalRotation: {x: 0, y: 0.16946983, z: 0, w: 0.9855354}
   m_LocalPosition: {x: 2.81, y: 62.19, z: -3.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978319562}
-  m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 19.514, z: 0}
+--- !u!114 &1339099508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339099506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1351809605
 GameObject:
   m_ObjectHideFlags: 0
@@ -8895,6 +9221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1368955821}
+  - component: {fileID: 1368955822}
   m_Layer: 0
   m_Name: NeoPoint6
   m_TagString: Untagged
@@ -8917,6 +9244,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: 61.681, z: 0}
+--- !u!114 &1368955822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368955820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1373746395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3092603830027386744, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -9010,6 +9350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1382793210}
+  - component: {fileID: 1382793211}
   m_Layer: 0
   m_Name: HugoPoint4
   m_TagString: Untagged
@@ -9032,6 +9373,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: -131.771, z: 0}
+--- !u!114 &1382793211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382793209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1384896567
 GameObject:
   m_ObjectHideFlags: 0
@@ -9476,6 +9830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1427528492}
+  - component: {fileID: 1427528493}
   m_Layer: 0
   m_Name: HugoPoint5
   m_TagString: Untagged
@@ -9498,6 +9853,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: -131.407, z: 0}
+--- !u!114 &1427528493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427528491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1433933937 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3849762623622064168, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -9703,6 +10071,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1449286082}
+  - component: {fileID: 1449286083}
   m_Layer: 0
   m_Name: SamPointVent1
   m_TagString: Untagged
@@ -9718,13 +10087,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449286081}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2140193, z: -0, w: 0.97682947}
+  m_LocalRotation: {x: 0, y: -0.9535068, z: 0, w: 0.3013715}
   m_LocalPosition: {x: -31.8, y: 63.24, z: -23.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978319562}
-  m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -144.92, z: 0}
+--- !u!114 &1449286083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449286081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1452515839 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 944551885904897370, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -10140,6 +10522,7 @@ MonoBehaviour:
   - {fileID: 258584078}
   - {fileID: 1205709771}
   - {fileID: 1327985925}
+  - {fileID: 19917150}
   SecondPoints:
   - SecPoints:
     - {fileID: 602908447}
@@ -10238,7 +10621,7 @@ MonoBehaviour:
   playerCam: {fileID: 688364458}
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1419514397}
-  ChangeCamera: {fileID: 0}
+  ChangeCamera: {fileID: 1101676373}
   raycastlength: 1000
   animator: {fileID: 1508894340}
 --- !u!65 &1508894343
@@ -10522,6 +10905,7 @@ MonoBehaviour:
   - {fileID: 323571121}
   - {fileID: 1964304951}
   - {fileID: 372134483}
+  - {fileID: 1255777396}
   SecondPoints:
   - SecPoints:
     - {fileID: 120501603}
@@ -10612,7 +10996,7 @@ MonoBehaviour:
   playerCam: {fileID: 688364458}
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1688056107}
-  ChangeCamera: {fileID: 0}
+  ChangeCamera: {fileID: 1101676373}
   raycastlength: 1000
   animator: {fileID: 1533867428}
 --- !u!65 &1533867431
@@ -11201,6 +11585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1596354876}
+  - component: {fileID: 1596354877}
   m_Layer: 0
   m_Name: NeoPoint4
   m_TagString: Untagged
@@ -11223,6 +11608,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1596354877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596354875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1618822198
 GameObject:
   m_ObjectHideFlags: 0
@@ -11360,6 +11758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1619421615}
+  - component: {fileID: 1619421616}
   m_Layer: 0
   m_Name: HugoPoint1
   m_TagString: Untagged
@@ -11382,6 +11781,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+--- !u!114 &1619421616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619421614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1625870402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5588985265287161531, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -12774,6 +13186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1842299433}
+  - component: {fileID: 1842299434}
   m_Layer: 0
   m_Name: SamPoint3
   m_TagString: Untagged
@@ -12789,13 +13202,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842299432}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2140193, z: -0, w: 0.97682947}
+  m_LocalRotation: {x: 0, y: -0.69189125, z: 0, w: 0.7220018}
   m_LocalPosition: {x: -13.62, y: 62.19, z: -20.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978319562}
-  m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -87.56, z: 0}
+--- !u!114 &1842299434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842299432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1846215651 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7450793428273676048, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -12861,6 +13287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1864209969}
+  - component: {fileID: 1864209970}
   m_Layer: 0
   m_Name: NeoPoint8
   m_TagString: Untagged
@@ -12883,6 +13310,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605646818}
   m_LocalEulerAnglesHint: {x: 0, y: -71.207, z: 0}
+--- !u!114 &1864209970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864209968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1880305729
 GameObject:
   m_ObjectHideFlags: 0
@@ -12892,6 +13332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1880305730}
+  - component: {fileID: 1880305731}
   m_Layer: 0
   m_Name: SamPointVent3
   m_TagString: Untagged
@@ -12914,6 +13355,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1978319562}
   m_LocalEulerAnglesHint: {x: 0, y: 24.716, z: 0}
+--- !u!114 &1880305731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880305729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1880718605 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7258984038994745908, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -14223,6 +14677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1944811569}
+  - component: {fileID: 1944811570}
   m_Layer: 0
   m_Name: HugoPoint6
   m_TagString: Untagged
@@ -14245,6 +14700,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: 54.629, z: 0}
+--- !u!114 &1944811570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944811568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1946594964 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -322447658274708644, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -14282,6 +14750,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1964304952}
+  - component: {fileID: 1964304953}
   m_Layer: 0
   m_Name: HugoPoint9
   m_TagString: Untagged
@@ -14304,6 +14773,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1488397052}
   m_LocalEulerAnglesHint: {x: 0, y: -131.771, z: 0}
+--- !u!114 &1964304953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964304951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0efb1336e187847bcb7d4478588624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Accessible: 1
 --- !u!1 &1966634215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4004417721617893532, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -15112,6 +15594,10 @@ MonoBehaviour:
   timeToOpen: 0.25
   Top: {x: 5.186, y: 1.214, z: 8.959}
   Bottom: {x: 4.96, y: 1.214, z: 10.533}
+  ConditionalPoints:
+  - {fileID: 19917150}
+  - {fileID: 1255777396}
+  - {fileID: 1100045313}
 --- !u!1 &2122083485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4906838889796845047, guid: 09621c2b403b3e54dafa5370c0509fd7,

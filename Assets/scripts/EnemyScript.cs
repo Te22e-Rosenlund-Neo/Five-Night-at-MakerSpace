@@ -19,15 +19,15 @@ public class EnemyScript : MonoBehaviour
 
     public List<SecondaryPoints> SecondPoints = new();
     public Transform JumpScareNode;
+
     public GameObject Door;
     public int AI_Level;
-    public GameObject moveto;
+    // public GameObject moveto;
 
     public float StartTime;
     private float timer;
 
     int CurrentNode;
-    string CurrentNodeName;
 
     void Awake()
     {
@@ -41,8 +41,8 @@ public class EnemyScript : MonoBehaviour
 
     void Update()
     {
-        transform.position = moveto.transform.position;
-        transform.rotation = moveto.transform.rotation;
+       
+        
 
         // checks if the timer for move is 0, then checks if it should move, then moves.
         if (timer <= 0)
@@ -73,20 +73,20 @@ public class EnemyScript : MonoBehaviour
         int RandomTarget = UnityEngine.Random.Range(0, SecondPoints[CurrentNode].SecPoints.Count);
         Transform NewPosition = SecondPoints[CurrentNode].SecPoints[RandomTarget].transform;
 
-        for(int i = 0; i < points.Count-1; i++){
+        for(int i = 0; i < points.Count; i++){
             if(points[i].transform == NewPosition.transform){
-                    if(NewPosition == JumpScareNode){
-                        if(Door.GetComponent<Door>().DoorOpen == true){
-                            NewPosition = transform;
-                            Debug.Log("failed entry to player (closed door)");
-                        }else{
-                            transform.GetComponent<JumpScareScript>().JumpScare();
-                        }
+                    if(points[i].GetComponent<PointsAcessiible>().Accessible == true){
+                        Debug.Log(points[i].transform.name); 
+                        Debug.Log("accessible? " + points[i].GetComponent<PointsAcessiible>().Accessible);
+                        CurrentNode = i; 
                     }else{
-                        CurrentNode = i;
+                        Debug.Log("failed entry (closed door)");
+                        NewPosition = transform;
+                    }
+                   
                     }
         }
-        }
+        
 
         // Debug.Log(transform.name + CurrentNode);
         // Debug.Log(transform.name + NewPosition);

@@ -11,6 +11,8 @@ public class Door : MonoBehaviour
     [SerializeField] Vector3 Top;
     [SerializeField] Vector3 Bottom;
     float time = 0;
+
+    public List<GameObject> ConditionalPoints;
   
     void FixedUpdate(){
         if(time < timeToOpen){
@@ -32,6 +34,9 @@ public void ToggleDoor()
         DoorOpen = true;
      }else{
         DoorOpen = false;
+    }
+    foreach(GameObject point in ConditionalPoints){
+        point.GetComponent<PointsAcessiible>().Accessible = !point.GetComponent<PointsAcessiible>().Accessible;
     }
 }
 }
