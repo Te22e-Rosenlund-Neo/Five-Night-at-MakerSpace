@@ -21,14 +21,21 @@ public class MaxiScript : MonoBehaviour
             Counter();
         }
        
-        
         if(timer == 0){
             Stage += 1;
             timer = maxtime;
+            int MoveChance = Random.Range(1,3);
+
+            if(MoveChance == 3){
+                int MoveRandom = Random.Range(0, MaxiPoints.Count-1);
+                transform.position = MaxiPoints[MoveRandom].transform.position;
+                transform.rotation = MaxiPoints[MoveRandom].transform.rotation;
+            }
         }
 
 
-
+    int move = Random.Range(1,16);
+    
 
     }
     void Animation(){
