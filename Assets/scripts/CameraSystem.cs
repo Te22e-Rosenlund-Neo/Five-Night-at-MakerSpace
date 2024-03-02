@@ -20,6 +20,8 @@ public class CameraSystem : MonoBehaviour
 
     public Camera PlayerCam;
 
+    public GameObject Maxi;
+
     public GameObject CamPanel;
     
     public GameObject Player;
@@ -52,12 +54,15 @@ public class CameraSystem : MonoBehaviour
 
     public void ToggleCam(){
     Battery.GetComponent<BatteryControlHub>().CamerasOpen =  !Battery.GetComponent<BatteryControlHub>().CamerasOpen;
+    
+
         if(CamOn == false){
             CamOn = true;
             SwapCamVariableChange();
             cam1.enabled = true;
             CamPanel.SetActive(true);
             Player.GetComponent<PlayerMovement>().enabled = false;
+            Maxi.GetComponent<MaxiScript>().CamCount += 1;
         }else{
             CamOn = false;
             SwapToPlayerView();
