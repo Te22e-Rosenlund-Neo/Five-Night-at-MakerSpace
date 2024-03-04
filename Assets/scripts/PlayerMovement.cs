@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public Transform orientation;
 
+    public int SnusCount;
+
     float HorizontalInput;
     float VerticalInput;
     Vector3 moveDirection;

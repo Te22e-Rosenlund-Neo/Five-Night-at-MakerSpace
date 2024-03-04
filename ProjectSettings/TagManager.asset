@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Point
   - button
+  - Snus
   layers:
   - Default
   - TransparentFX
