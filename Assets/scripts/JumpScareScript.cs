@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using NUnit.Framework.Internal;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class JumpScareScript : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public GameObject ChangeCamera;
 public int raycastlength;
 
 public Animator animator;
+
+public Volume volume;
 bool start = false;
 
 void Update(){
@@ -50,6 +53,7 @@ void DeathScene(){
     ScareFolder.SetActive(true);
     Debug.Log("Death");
     Player.GetComponent<PlayerMovement>().enabled = false;
+    volume.enabled = true;
 }
 
 }

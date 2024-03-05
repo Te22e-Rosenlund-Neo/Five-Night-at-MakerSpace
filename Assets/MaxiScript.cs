@@ -15,9 +15,13 @@ public class MaxiScript : MonoBehaviour
     public int CamCheckMax;
 
     public int CamCount;
+
+    public GameObject CurrentWindow;
+
     void Start(){
         transform.position = MaxiPoints[3].transform.position;
         transform.rotation = MaxiPoints[3].transform.rotation;
+        CurrentWindow = MaxiPoints[3].GetComponent<WindowHeritage>().WindowParent;
     }
     void Update()
     {
@@ -37,7 +41,8 @@ public class MaxiScript : MonoBehaviour
                 int MoveRandom = Random.Range(0, MaxiPoints.Count-1);
                 transform.position = MaxiPoints[MoveRandom].transform.position;
                 transform.rotation = MaxiPoints[MoveRandom].transform.rotation;
-            }
+                CurrentWindow = MaxiPoints[MoveRandom].GetComponent<WindowHeritage>().WindowParent;
+            }   
         }
     }
     void Animation(){

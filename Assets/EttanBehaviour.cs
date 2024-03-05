@@ -34,17 +34,17 @@ public class EttanBehaviour : MonoBehaviour
                 }
             }
         }
-        if(Vector3.Distance(Player.transform.position, Maxi.transform.position) < 20f){
+        if(Vector3.Distance(Player.transform.position, Maxi.transform.position) < 3f){
             GiveMaxi();
         }
     }
     void GiveMaxi(){
         
-            Ray raymaxi = PlayerCam.ScreenPointToRay(Input.mousePosition);
+            Ray RayMaxiWIndow = PlayerCam.ScreenPointToRay(Input.mousePosition);
             RaycastHit HitInfomaxi;
-            if(Physics.Raycast(raymaxi, out HitInfomaxi, 1000)){
+            if(Physics.Raycast(RayMaxiWIndow, out HitInfomaxi, 1000)){
                 Debug.Log(HitInfomaxi.transform.name);
-                if(HitInfomaxi.transform == Maxi.transform){
+                if(HitInfomaxi.transform == Maxi.GetComponent<MaxiScript>().CurrentWindow.transform){
                     if(Player.GetComponent<PlayerMovement>().SnusCount == 1){
                         CommandPanel.SetActive(true);
                         if(Input.GetKeyDown(KeyCode.E)){
