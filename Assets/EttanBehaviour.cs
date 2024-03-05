@@ -51,6 +51,7 @@ public class EttanBehaviour : MonoBehaviour
                             CommandPanel.SetActive(false);
                             Player.GetComponent<PlayerMovement>().SnusCount -= 1;
                             Maxi.GetComponent<MaxiScript>().ResetProgress();
+                            Maxi.GetComponent<MaxiScript>().CurrentWindow.SetActive(false);
                         }
                     }else{
                         CommandPanel.SetActive(false);
