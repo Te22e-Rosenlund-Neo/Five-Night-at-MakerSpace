@@ -36,13 +36,15 @@ public class MaxiScript : MonoBehaviour
             timer = maxtime;
             int MoveChance = Random.Range(1,4);
             Debug.Log(MoveChance);
-            if(MoveChance == 3){
-                
+            if(MoveChance == 3){                
                 int MoveRandom = Random.Range(0, MaxiPoints.Count-1);
                 transform.position = MaxiPoints[MoveRandom].transform.position;
                 transform.rotation = MaxiPoints[MoveRandom].transform.rotation;
                 CurrentWindow = MaxiPoints[MoveRandom].GetComponent<WindowHeritage>().WindowParent;
             }   
+            if(Stage >= 4){
+                GetComponent<JumpScareScript>().JumpScare();
+            }
         }
     }
     void Animation(){
