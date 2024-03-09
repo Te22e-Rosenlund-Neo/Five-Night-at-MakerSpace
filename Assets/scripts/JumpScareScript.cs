@@ -19,7 +19,6 @@ public GameObject ScareFolder;
 
 public GameObject ChangeCamera;
 
-public int raycastlength;
 
 public Animator animator;
 
