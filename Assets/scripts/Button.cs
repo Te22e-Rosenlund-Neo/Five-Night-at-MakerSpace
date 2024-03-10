@@ -6,10 +6,11 @@ public class Button : MonoBehaviour
 {
     [SerializeField] Camera playerCam;
     public int raycastlength;
-    public string ButtonTag;
     public GameObject button;
-    public GameObject Battery;
 
+    public GameObject MartinButton;
+    public GameObject Battery;
+    public GameObject Martin;
     public GameObject Door;
 
 void Update(){
@@ -27,6 +28,9 @@ void Update(){
                 Debug.Log("HIT");
                 Door.GetComponent<Door>().ToggleDoor();
                 Battery.GetComponent<BatteryControlHub>().DoorClosed = !Battery.GetComponent<BatteryControlHub>().DoorClosed;
+            }
+            if(Hit.transform == MartinButton.transform){
+                Martin.GetComponent<MartinScript>().DelayProgression();
             }
         }
     }

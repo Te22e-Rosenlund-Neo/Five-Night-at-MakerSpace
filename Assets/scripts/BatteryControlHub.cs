@@ -11,7 +11,7 @@ using System;
 
 public class BatteryControlHub : MonoBehaviour
 {
-    public int BatteryLevel = 1000;
+    public float BatteryLevel = 1000;
 
     public bool CamerasOpen = false;
     public bool DoorClosed = false;
