@@ -19,6 +19,7 @@ public class BalloonBoyDeathSequence : MonoBehaviour
     {
     
     if(start == true){
+        timer -= Time.deltaTime;
         foreach(GameObject light in lights){
             light.SetActive(false);
         }
@@ -27,7 +28,5 @@ public class BalloonBoyDeathSequence : MonoBehaviour
     if(timer <= 0){
         GetComponent<JumpScareScript>().JumpScare();
     }
-
-    timer -= Time.deltaTime;
     }
 }
