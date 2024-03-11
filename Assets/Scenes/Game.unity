@@ -1247,6 +1247,7 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 184801129}
   ChangeCamera: {fileID: 1101676373}
+  Battery: {fileID: 477356831}
   animator: {fileID: 78107844}
   volume: {fileID: 291562127}
 --- !u!114 &78107846
@@ -2788,6 +2789,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   ScareFolder: {fileID: 0}
   ChangeCamera: {fileID: 0}
+  Battery: {fileID: 0}
   animator: {fileID: 0}
   volume: {fileID: 0}
 --- !u!23 &229170423
@@ -6236,6 +6238,145 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &477115167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 477115168}
+  - component: {fileID: 477115170}
+  - component: {fileID: 477115169}
+  m_Layer: 5
+  m_Name: You Died
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &477115168
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477115167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.8316, y: 2.8316, z: 2.8316}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1054149318}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 66, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &477115169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477115167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'You Died
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: ce1445d9d31ec1d49b2e5585412ee8ed, type: 2}
+  m_sharedMaterial: {fileID: 1433499796855142492, guid: ce1445d9d31ec1d49b2e5585412ee8ed,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4290295992
+  m_fontColor: {r: 0.7207546, g: 0.7207546, b: 0.7207546, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &477115170
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477115167}
+  m_CullTransparentMesh: 1
 --- !u!1 &477356831
 GameObject:
   m_ObjectHideFlags: 0
@@ -6247,6 +6388,7 @@ GameObject:
   - component: {fileID: 477356833}
   - component: {fileID: 477356832}
   - component: {fileID: 477356834}
+  - component: {fileID: 477356835}
   m_Layer: 0
   m_Name: ElectronicsBattery
   m_TagString: Untagged
@@ -6306,6 +6448,21 @@ MonoBehaviour:
   ChangeCam: {fileID: 1101676373}
   Player: {fileID: 280725147}
   BalloonBoy: {fileID: 1308939182}
+--- !u!114 &477356835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477356831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d677ffda36fd7e44b2a4fbf513fbe4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaShift: {fileID: 1054149317}
+  text: {fileID: 477115169}
+  triggered: 0
 --- !u!1001 &478265754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6759,6 +6916,7 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1442188206}
   ChangeCamera: {fileID: 1101676373}
+  Battery: {fileID: 477356831}
   animator: {fileID: 478265760}
   volume: {fileID: 291562127}
 --- !u!114 &478265762
@@ -6786,7 +6944,7 @@ MonoBehaviour:
   - {fileID: 2052103923}
   - {fileID: 522083781}
   - {fileID: 329064406}
-  Battery: {fileID: 0}
+  Battery: {fileID: 477356831}
 --- !u!1 &490067078 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -548217067281123513, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -10748,6 +10906,7 @@ RectTransform:
   - {fileID: 1693992316}
   - {fileID: 359432899}
   - {fileID: 1288743119}
+  - {fileID: 1054149318}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -12060,6 +12219,82 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6905518748718587580, guid: 09621c2b403b3e54dafa5370c0509fd7, type: 3}
+--- !u!1 &1054149317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1054149318}
+  - component: {fileID: 1054149320}
+  - component: {fileID: 1054149319}
+  m_Layer: 5
+  m_Name: DeathPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1054149318
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054149317}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 477115168}
+  m_Father: {fileID: 918318963}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1054149319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054149317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1054149320
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054149317}
+  m_CullTransparentMesh: 1
 --- !u!1 &1060071643 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4384276591864852058, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -13998,6 +14233,7 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 352888263}
   ChangeCamera: {fileID: 1101676373}
+  Battery: {fileID: 477356831}
   animator: {fileID: 1266490122}
   volume: {fileID: 291562127}
 --- !u!1 &1273231755 stripped
@@ -14847,6 +15083,7 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1290164555}
   ChangeCamera: {fileID: 1101676373}
+  Battery: {fileID: 0}
   animator: {fileID: 1308939189}
   volume: {fileID: 291562127}
 --- !u!95 &1308939189
@@ -17209,6 +17446,7 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1419514397}
   ChangeCamera: {fileID: 1101676373}
+  Battery: {fileID: 477356831}
   animator: {fileID: 1508894340}
   volume: {fileID: 291562127}
 --- !u!65 &1508894343
@@ -17584,6 +17822,7 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1688056107}
   ChangeCamera: {fileID: 1101676373}
+  Battery: {fileID: 477356831}
   animator: {fileID: 1533867428}
   volume: {fileID: 291562127}
 --- !u!65 &1533867431
