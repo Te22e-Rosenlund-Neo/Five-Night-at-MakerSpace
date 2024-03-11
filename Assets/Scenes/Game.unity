@@ -15083,7 +15083,7 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1290164555}
   ChangeCamera: {fileID: 1101676373}
-  Battery: {fileID: 0}
+  Battery: {fileID: 477356831}
   animator: {fileID: 1308939189}
   volume: {fileID: 291562127}
 --- !u!95 &1308939189
