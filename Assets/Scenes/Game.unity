@@ -1247,7 +1247,6 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 184801129}
   ChangeCamera: {fileID: 1101676373}
-  Battery: {fileID: 477356831}
   animator: {fileID: 78107844}
   volume: {fileID: 291562127}
 --- !u!114 &78107846
@@ -2789,7 +2788,6 @@ MonoBehaviour:
   Player: {fileID: 0}
   ScareFolder: {fileID: 0}
   ChangeCamera: {fileID: 0}
-  Battery: {fileID: 0}
   animator: {fileID: 0}
   volume: {fileID: 0}
 --- !u!23 &229170423
@@ -3580,6 +3578,7 @@ GameObject:
   m_Component:
   - component: {fileID: 278819636}
   - component: {fileID: 278819635}
+  - component: {fileID: 278819637}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3599,6 +3598,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc621e4f2ec40034baea17f713d7d5b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  night: 0
+  GameWin: 0
+  NNight1: 000000000000000000000000
+  NNight2: 000000000000000000000000
+  NNight3: 000000000000000000000000
+  NNight4: 000000000000000000000000
+  NNight5: 000000000000000000000000
+  SNight1: 000000000000000000000000
+  SNight2: 000000000000000000000000
+  SNight3: 000000000000000000000000
+  SNight4: 000000000000000000000000
+  SNight5: 000000000000000000000000
+  HNight1: 000000000000000000000000
+  HNight2: 000000000000000000000000
+  HNight3: 000000000000000000000000
+  HNight4: 000000000000000000000000
+  HNight5: 000000000000000000000000
+  MNightsTimes:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  MaxiNightsTimes:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  SnusNight1: []
+  SnusNight2: []
+  SnusNight3: []
+  SnusNight4: []
+  SnusNight5: []
 --- !u!4 &278819636
 Transform:
   m_ObjectHideFlags: 0
@@ -3614,6 +3647,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &278819637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278819634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d677ffda36fd7e44b2a4fbf513fbe4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaShift: {fileID: 1054149317}
+  text: {fileID: 477115169}
+  triggered: 0
 --- !u!1 &280725147 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8218462006131062177, guid: b3c4a2692ddbe7640b889a47249fcc09,
@@ -6432,7 +6480,6 @@ GameObject:
   - component: {fileID: 477356833}
   - component: {fileID: 477356832}
   - component: {fileID: 477356834}
-  - component: {fileID: 477356835}
   m_Layer: 0
   m_Name: ElectronicsBattery
   m_TagString: Untagged
@@ -6492,21 +6539,6 @@ MonoBehaviour:
   ChangeCam: {fileID: 1101676373}
   Player: {fileID: 280725147}
   BalloonBoy: {fileID: 1308939182}
---- !u!114 &477356835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477356831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d677ffda36fd7e44b2a4fbf513fbe4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AlphaShift: {fileID: 1054149317}
-  text: {fileID: 477115169}
-  triggered: 0
 --- !u!1001 &478265754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6960,7 +6992,6 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1442188206}
   ChangeCamera: {fileID: 1101676373}
-  Battery: {fileID: 477356831}
   animator: {fileID: 478265760}
   volume: {fileID: 291562127}
 --- !u!114 &478265762
@@ -14277,7 +14308,6 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 352888263}
   ChangeCamera: {fileID: 1101676373}
-  Battery: {fileID: 477356831}
   animator: {fileID: 1266490122}
   volume: {fileID: 291562127}
 --- !u!1 &1273231755 stripped
@@ -15127,7 +15157,6 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1290164555}
   ChangeCamera: {fileID: 1101676373}
-  Battery: {fileID: 477356831}
   animator: {fileID: 1308939189}
   volume: {fileID: 291562127}
 --- !u!95 &1308939189
@@ -17490,7 +17519,6 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1419514397}
   ChangeCamera: {fileID: 1101676373}
-  Battery: {fileID: 477356831}
   animator: {fileID: 1508894340}
   volume: {fileID: 291562127}
 --- !u!65 &1508894343
@@ -17866,7 +17894,6 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1688056107}
   ChangeCamera: {fileID: 1101676373}
-  Battery: {fileID: 477356831}
   animator: {fileID: 1533867428}
   volume: {fileID: 291562127}
 --- !u!65 &1533867431
