@@ -19,7 +19,6 @@ public GameObject ScareFolder;
 
 public GameObject ChangeCamera;
 
-public GameObject Battery;
 
 
 public Animator animator;
@@ -55,7 +54,7 @@ void DeathScene(){
     Debug.Log("Death");
     Player.GetComponent<PlayerMovement>().enabled = false;
     volume.enabled = true;
-    Battery.GetComponent<DeathScreen>().triggered = true;
+    GameObject.Find("GameManager").GetComponent<DeathScreen>().triggered = true;
 }
 
 }
