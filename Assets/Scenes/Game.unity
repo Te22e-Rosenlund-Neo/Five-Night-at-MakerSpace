@@ -3600,29 +3600,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   night: 0
   GameWin: 0
-  Neo: {fileID: 0}
-  Ntime: 0
-  NeoNightDifficulties: 0000000000000000000000000000000000000000
-  NNight5: 0
-  Sam: {fileID: 0}
-  Stime: 0
-  SamNightDifficulties: 0000000000000000000000000000000000000000
-  Hugo: {fileID: 0}
-  HugoNightDifficulties: 0000000000000000000000000000000000000000
-  Martin: {fileID: 0}
+  Neo: {fileID: 1508894337}
+  Ntime: 6
+  NeoNightDifficulties: 0300000003000000030000000400000005000000
+  Sam: {fileID: 78107843}
+  Stime: 4
+  SamNightDifficulties: 0100000004000000040000000600000007000000
+  Hugo: {fileID: 1533867425}
+  Htime: 8
+  HugoNightDifficulties: 0100000001000000040000000400000007000000
+  Martin: {fileID: 478265755}
   MNightsTime:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  Maxi: {fileID: 0}
+  - 30
+  - 28
+  - 26
+  - 25
+  - 20
+  Maxi: {fileID: 1266490121}
   MaxiNightsTime:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 10
+  - 8
+  - 7
+  - 6
+  - 6
   SnusNight1: []
   SnusNight2: []
   SnusNight3: []

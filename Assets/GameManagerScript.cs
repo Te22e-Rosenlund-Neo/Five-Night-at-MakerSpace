@@ -21,7 +21,6 @@ public class GameManagerScript : MonoBehaviour
     public GameObject Neo;
     public float Ntime;
     public int[] NeoNightDifficulties = new int[5];
-    public int NNight5;
 
     [Header("Difficulties Nights - Sam")]
     public GameObject Sam;
@@ -30,6 +29,7 @@ public class GameManagerScript : MonoBehaviour
 
     [Header("Difficulties Nights - Hugo")]
     public GameObject Hugo;
+    public float Htime;
     public int[] HugoNightDifficulties = new int[5];
 
     [Header("Difficulties Night - Martin")]
@@ -41,11 +41,11 @@ public class GameManagerScript : MonoBehaviour
     public float[] MaxiNightsTime = new float[5];
 
     [Header("snus")]
-    public List<DisplayList> SnusNight1;
-    public List<DisplayList> SnusNight2;
-    public List<DisplayList> SnusNight3;
-    public List<DisplayList> SnusNight4;
-    public List<DisplayList> SnusNight5;
+    public List<GameObject> SnusNight1;
+    public List<GameObject> SnusNight2;
+    public List<GameObject> SnusNight3;
+    public List<GameObject> SnusNight4;
+    public List<GameObject> SnusNight5;
 
     bool reset = false;
     bool ChangeCurrentNightStuff;
@@ -86,7 +86,3 @@ public class GameManagerScript : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 }
-[Serializable]
-public class DisplayList{
-   public List<GameObject> inside;
-}   

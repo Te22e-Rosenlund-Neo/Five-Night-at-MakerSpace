@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2023.2/staging' branch; Version is '2023.2.7f1 (0a9195b3d453) revision 692629'; Using compiler version '193431935'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16071 MB
+OS: 'Windows 10  (10.0.19044) 64bit Education' Language: 'sv' Physical Memory: 16064 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -9,21 +9,21 @@ C:\Program Files\Unity\Hub\Editor\2023.2.7f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker1
+AssetImportWorker0
 -projectPath
-C:/Users/erikr/OneDrive/Dokument/unity games/Five-Night-at-MakerSpace
+C:/Users/neo.rosenlund/Documents/Five-Night-at-MakerSpace
 -logFile
-Logs/AssetImportWorker1.log
+Logs/AssetImportWorker0.log
 -srvPort
-58633
+63005
 -job-worker-count
-5
+3
 -background-job-worker-count
 8
 -asset-garbage-collectors
 1
-Successfully changed project path to: C:/Users/erikr/OneDrive/Dokument/unity games/Five-Night-at-MakerSpace
-C:/Users/erikr/OneDrive/Dokument/unity games/Five-Night-at-MakerSpace
+Successfully changed project path to: C:/Users/neo.rosenlund/Documents/Five-Night-at-MakerSpace
+C:/Users/neo.rosenlund/Documents/Five-Night-at-MakerSpace
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -58,28 +58,28 @@ C:/Users/erikr/OneDrive/Dokument/unity games/Five-Night-at-MakerSpace
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13980] Host "[IP] 91.130.42.211 [Port] 0 [Flags] 2 [Guid] 3327178234 [EditorId] 3327178234 [Version] 1048832 [Id] WindowsEditor(7,Virtknight) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [13980] Host "[IP] 91.130.42.211 [Port] 0 [Flags] 2 [Guid] 3327178234 [EditorId] 3327178234 [Version] 1048832 [Id] WindowsEditor(7,Virtknight) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 5
-[Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
+Player connection [3088] Host "[IP] 192.168.192.1 [Port] 0 [Flags] 2 [Guid] 2809856000 [EditorId] 2809856000 [Version] 1048832 [Id] WindowsEditor(7,5CD225N8XZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [3088] Host "[IP] 192.168.192.1 [Port] 0 [Flags] 2 [Guid] 2809856000 [EditorId] 2809856000 [Version] 1048832 [Id] WindowsEditor(7,5CD225N8XZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
+[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 3.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 47.44 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.7f1 (0a9195b3d453)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/erikr/OneDrive/Dokument/unity games/Five-Night-at-MakerSpace/Assets
+[Subsystems] Discovering subsystems at path C:/Users/neo.rosenlund/Documents/Five-Night-at-MakerSpace/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Renderer: NVIDIA GeForce MX450 (ID=0x1f97)
     Vendor:   NVIDIA
-    VRAM:     8024 MB
-    Driver:   31.0.15.5176
+    VRAM:     1906 MB
+    Driver:   31.0.15.5123
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56052
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -95,49 +95,49 @@ Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.006047 seconds.
-- Loaded All Assemblies, in  0.425 seconds
+Registered in 0.034578 seconds.
+- Loaded All Assemblies, in  2.693 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 246 ms
+Android Extension - Scanning For ADB Devices 1344 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.742 seconds
-Domain Reload Profiling: 1165ms
-	BeginReloadAssembly (133ms)
+- Finished resetting the current domain, in  4.311 seconds
+Domain Reload Profiling: 6983ms
+	BeginReloadAssembly (771ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (61ms)
-	LoadAllAssembliesAndSetupDomain (169ms)
-		LoadAssemblies (131ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (255ms)
+	RebuildNativeTypeToScriptingClass (83ms)
+	initialDomainReloadingComplete (389ms)
+	LoadAllAssembliesAndSetupDomain (1171ms)
+		LoadAssemblies (753ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (166ms)
-			TypeCache.Refresh (165ms)
-				TypeCache.ScanAssembly (150ms)
-			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (742ms)
+		AnalyzeDomain (1157ms)
+			TypeCache.Refresh (1146ms)
+				TypeCache.ScanAssembly (1070ms)
+			BuildScriptInfoCaches (1ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (4315ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (680ms)
+		SetupLoadedEditorAssemblies (3939ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (378ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (7ms)
-			ProcessInitializeOnLoadAttributes (211ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
+			InitializePlatformSupportModulesInManaged (2296ms)
+			SetLoadedEditorAssemblies (17ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (1181ms)
+			ProcessInitializeOnLoadMethodAttributes (371ms)
 			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
@@ -157,50 +157,74 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.373 seconds
-Refreshing native plugins compatible for Editor in 6.04 ms, found 3 plugins.
+- Loaded All Assemblies, in  6.384 seconds
+Refreshing native plugins compatible for Editor in 34.86 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.703 seconds
-Domain Reload Profiling: 3072ms
-	BeginReloadAssembly (442ms)
+- Finished resetting the current domain, in  5.684 seconds
+Domain Reload Profiling: 12020ms
+	BeginReloadAssembly (2046ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (48ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (53ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (838ms)
-		LoadAssemblies (516ms)
+		CreateAndSetChildDomain (126ms)
+	RebuildCommonClasses (243ms)
+	RebuildNativeTypeToScriptingClass (95ms)
+	initialDomainReloadingComplete (271ms)
+	LoadAllAssembliesAndSetupDomain (3679ms)
+		LoadAssemblies (2634ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (452ms)
-			TypeCache.Refresh (358ms)
-				TypeCache.ScanAssembly (321ms)
-			BuildScriptInfoCaches (70ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1703ms)
+		AnalyzeDomain (1725ms)
+			TypeCache.Refresh (1386ms)
+				TypeCache.ScanAssembly (1272ms)
+			BuildScriptInfoCaches (257ms)
+			ResolveRequiredComponents (67ms)
+	FinalizeReload (5686ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1331ms)
+		SetupLoadedEditorAssemblies (4027ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (174ms)
-			ProcessInitializeOnLoadAttributes (880ms)
-			ProcessInitializeOnLoadMethodAttributes (237ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (141ms)
+			SetLoadedEditorAssemblies (23ms)
+			BeforeProcessingInitializeOnLoad (534ms)
+			ProcessInitializeOnLoadAttributes (2036ms)
+			ProcessInitializeOnLoadMethodAttributes (1243ms)
+			AfterProcessingInitializeOnLoad (48ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 4.49 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (40ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 39.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 185 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6290 unused Assets / (6.2 MB). Loaded Objects now: 6955.
-Memory consumption went from 191.2 MB to 185.0 MB.
-Total: 14.483100 ms (FindLiveObjects: 0.513200 ms CreateObjectMapping: 0.749100 ms MarkObjects: 10.075900 ms  DeleteObjects: 3.143400 ms)
+Unloading 6290 unused Assets / (5.0 MB). Loaded Objects now: 6955.
+Memory consumption went from 189.1 MB to 184.1 MB.
+Total: 82.625300 ms (FindLiveObjects: 1.572800 ms CreateObjectMapping: 2.533300 ms MarkObjects: 62.464900 ms  DeleteObjects: 16.049000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1228951.215144 seconds.
+  path: Assets/assets/sign.fbx
+  artifactKey: Guid(3fa5b7c50051fc0468c9f0976361202a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/assets/sign.fbx using Guid(3fa5b7c50051fc0468c9f0976361202a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1c6cba7a265be76fe892d5b69ceace8') in 2.6075912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 49
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/assets/Can.fbx
+  artifactKey: Guid(2afb8791d89a2b240affb701598c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/assets/Can.fbx using Guid(2afb8791d89a2b240affb701598c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5908a4c04543135633eef5e5746e16a') in 0.2700873 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/assets/signbase.png
+  artifactKey: Guid(aeae8113d43cb334489ef5fe0071111a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/assets/signbase.png using Guid(aeae8113d43cb334489ef5fe0071111a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b66db369889a7bc57eac286cd93e164') in 0.111941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
