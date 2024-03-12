@@ -3600,28 +3600,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   night: 0
   GameWin: 0
-  NNight1: 000000000000000000000000
-  NNight2: 000000000000000000000000
-  NNight3: 000000000000000000000000
-  NNight4: 000000000000000000000000
-  NNight5: 000000000000000000000000
-  SNight1: 000000000000000000000000
-  SNight2: 000000000000000000000000
-  SNight3: 000000000000000000000000
-  SNight4: 000000000000000000000000
-  SNight5: 000000000000000000000000
-  HNight1: 000000000000000000000000
-  HNight2: 000000000000000000000000
-  HNight3: 000000000000000000000000
-  HNight4: 000000000000000000000000
-  HNight5: 000000000000000000000000
-  MNightsTimes:
+  Neo: {fileID: 0}
+  Ntime: 0
+  NeoNightDifficulties: 0000000000000000000000000000000000000000
+  NNight5: 0
+  Sam: {fileID: 0}
+  Stime: 0
+  SamNightDifficulties: 0000000000000000000000000000000000000000
+  Hugo: {fileID: 0}
+  HugoNightDifficulties: 0000000000000000000000000000000000000000
+  Martin: {fileID: 0}
+  MNightsTime:
   - 0
   - 0
   - 0
   - 0
   - 0
-  MaxiNightsTimes:
+  Maxi: {fileID: 0}
+  MaxiNightsTime:
   - 0
   - 0
   - 0
@@ -10978,10 +10974,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1054149318}
   - {fileID: 1693992316}
   - {fileID: 359432899}
   - {fileID: 1288743119}
-  - {fileID: 1054149318}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -14268,6 +14264,7 @@ MonoBehaviour:
   AnimName: Stage
   Stage: 0
   timer: 0
+  maxtime: 6
   CamCheckMax: 4
   CamCount: 0
   CurrentWindow: {fileID: 0}
@@ -19534,7 +19531,7 @@ PrefabInstance:
     - target: {fileID: 987423080038668117, guid: e796f2275f1e83347bd1bad9daee5405,
         type: 3}
       propertyPath: m_ClearFlags
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 987423080038668117, guid: e796f2275f1e83347bd1bad9daee5405,
         type: 3}

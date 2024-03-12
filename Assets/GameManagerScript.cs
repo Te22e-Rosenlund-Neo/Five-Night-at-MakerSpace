@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -14,34 +16,39 @@ public class GameManagerScript : MonoBehaviour
     public int night;
     public bool GameWin;
     string Key = "NightLoad";
+
     [Header("Difficulties Nights - Neo")]
-    public int[] NNight1 = new int[3];
-    public int[] NNight2 = new int[3];
-    public int[] NNight3 = new int[3];
-    public int[] NNight4 = new int[3];
-    public int[] NNight5 = new int[3];
+    public GameObject Neo;
+    public float Ntime;
+    public int[] NeoNightDifficulties = new int[5];
+    public int NNight5;
+
     [Header("Difficulties Nights - Sam")]
-    public int[] SNight1 = new int[3];
-    public int[] SNight2 = new int[3];
-    public int[] SNight3 = new int[3];
-    public int[] SNight4 = new int[3];
-    public int[] SNight5 = new int[3];
+    public GameObject Sam;
+    public float Stime;
+    public int[] SamNightDifficulties = new int[5];
+
     [Header("Difficulties Nights - Hugo")]
-    public int[] HNight1 = new int[3];
-    public int[] HNight2 = new int[3];
-    public int[] HNight3 = new int[3];
-    public int[] HNight4 = new int[3];
-    public int[] HNight5 = new int[3];
+    public GameObject Hugo;
+    public int[] HugoNightDifficulties = new int[5];
+
     [Header("Difficulties Night - Martin")]
-    public float[] MNightsTimes = new float[5];
+    public GameObject Martin;
+    public float[] MNightsTime = new float[5];
+
     [Header("Difficulties Night - Maxi")]
-    public float[] MaxiNightsTimes = new float[5];
+    public GameObject Maxi;
+    public float[] MaxiNightsTime = new float[5];
+
     [Header("snus")]
-    public List<GameObject> SnusNight1;
-    public List<GameObject> SnusNight2;
-    public List<GameObject> SnusNight3;
-    public List<GameObject> SnusNight4;
-    public List<GameObject> SnusNight5;
+    public List<DisplayList> SnusNight1;
+    public List<DisplayList> SnusNight2;
+    public List<DisplayList> SnusNight3;
+    public List<DisplayList> SnusNight4;
+    public List<DisplayList> SnusNight5;
+
+    bool reset = false;
+    bool ChangeCurrentNightStuff;
 
     void Awake(){
         DontDestroyOnLoad(gameObject);
@@ -52,5 +59,34 @@ public class GameManagerScript : MonoBehaviour
             PlayerPrefs.SetInt(Key, night);
             GameWin = false;
         }
+
+        if(reset == true){
+            reset = false;
+            night = 1;
+        }
+        if(ChangeCurrentNightStuff == true){
+            ChangeCurrentNightStuff = false;
+            Neo.GetComponent<EnemyScript>().AI_Level = NeoNightDifficulties[night-1];
+            Sam.GetComponent<EnemyScript>().AI_Level = SamNightDifficulties[night-1];
+            Hugo.GetComponent<EnemyScript>().AI_Level = HugoNightDifficulties[night-1];
+            Martin.GetComponent<MartinScript>().StartTime = MNightsTime[night-1];
+            Maxi.GetComponent<MaxiScript>().maxtime = MaxiNightsTime[night-1];
+            
+        }
+
+    }
+    public void NewGame(){
+        reset = true;
+        ChangeCurrentNightStuff = true;
+        SceneManager.LoadScene(1);
+    }
+    public void Continue(){
+        night = PlayerPrefs.GetInt(Key);
+        ChangeCurrentNightStuff = true;
+        SceneManager.LoadScene(1);
     }
 }
+[Serializable]
+public class DisplayList{
+   public List<GameObject> inside;
+}   

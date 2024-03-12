@@ -10,7 +10,7 @@ public class MaxiScript : MonoBehaviour
     public int Stage;
 
     public float timer;
-    private float maxtime = 6f;
+    public float maxtime = 6f;
 
     public int CamCheckMax;
 
