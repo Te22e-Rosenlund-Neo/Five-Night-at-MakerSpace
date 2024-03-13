@@ -3623,11 +3623,72 @@ MonoBehaviour:
   - 7
   - 6
   - 6
-  SnusNight1: []
-  SnusNight2: []
-  SnusNight3: []
-  SnusNight4: []
-  SnusNight5: []
+  Snusar:
+  - inside:
+    - {fileID: 753535031}
+    - {fileID: 1202934556}
+    - {fileID: 663611718}
+    - {fileID: 1407626194}
+    - {fileID: 500165903}
+    - {fileID: 381661627}
+    - {fileID: 613976288}
+    - {fileID: 507807646}
+    - {fileID: 122783063}
+    - {fileID: 139941983}
+    - {fileID: 364243553}
+    - {fileID: 1387882176}
+    - {fileID: 283372888}
+    - {fileID: 910518104}
+    - {fileID: 1826973126}
+    - {fileID: 2144840182}
+    - {fileID: 325500117}
+    - {fileID: 1997913580}
+    - {fileID: 850666153}
+    - {fileID: 592048776}
+    - {fileID: 1301618774}
+    - {fileID: 411811305}
+    - {fileID: 1873791103}
+    - {fileID: 1069162762}
+  - inside:
+    - {fileID: 613976288}
+    - {fileID: 507807646}
+    - {fileID: 1387882176}
+    - {fileID: 283372888}
+    - {fileID: 753535031}
+    - {fileID: 910518104}
+    - {fileID: 1826973126}
+    - {fileID: 2144840182}
+    - {fileID: 325500117}
+    - {fileID: 1997913580}
+    - {fileID: 850666153}
+    - {fileID: 1873791103}
+  - inside:
+    - {fileID: 753535031}
+    - {fileID: 613976288}
+    - {fileID: 507807646}
+    - {fileID: 1387882176}
+    - {fileID: 283372888}
+    - {fileID: 910518104}
+    - {fileID: 1826973126}
+    - {fileID: 2144840182}
+    - {fileID: 325500117}
+    - {fileID: 1997913580}
+    - {fileID: 850666153}
+    - {fileID: 1873791103}
+  - inside:
+    - {fileID: 613976288}
+    - {fileID: 1873791103}
+    - {fileID: 850666153}
+    - {fileID: 592048776}
+    - {fileID: 1301618774}
+    - {fileID: 411811305}
+    - {fileID: 1873791103}
+  - inside:
+    - {fileID: 1069162762}
+    - {fileID: 1873791103}
+    - {fileID: 1826973126}
+    - {fileID: 1997913580}
+    - {fileID: 910518104}
 --- !u!4 &278819636
 Transform:
   m_ObjectHideFlags: 0
@@ -15215,7 +15276,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1320105786}
-  - component: {fileID: 1320105785}
   m_Layer: 0
   m_Name: snus
   m_TagString: Untagged
@@ -15223,70 +15283,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1320105785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320105784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7859ce3f02656164680700ad4d81e746, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AvailableSnusNight1:
-  - {fileID: 753535031}
-  - {fileID: 1202934556}
-  - {fileID: 663611718}
-  - {fileID: 1407626194}
-  - {fileID: 500165903}
-  - {fileID: 381661627}
-  - {fileID: 613976288}
-  - {fileID: 507807646}
-  - {fileID: 122783063}
-  - {fileID: 139941983}
-  - {fileID: 364243553}
-  - {fileID: 1387882176}
-  - {fileID: 283372888}
-  - {fileID: 910518104}
-  - {fileID: 1826973126}
-  - {fileID: 2144840182}
-  - {fileID: 325500117}
-  - {fileID: 1997913580}
-  - {fileID: 850666153}
-  - {fileID: 592048776}
-  - {fileID: 1301618774}
-  - {fileID: 411811305}
-  - {fileID: 1873791103}
-  - {fileID: 1069162762}
-  AvailableSnusNight23:
-  - {fileID: 613976288}
-  - {fileID: 507807646}
-  - {fileID: 1387882176}
-  - {fileID: 283372888}
-  - {fileID: 910518104}
-  - {fileID: 753535031}
-  - {fileID: 1826973126}
-  - {fileID: 2144840182}
-  - {fileID: 325500117}
-  - {fileID: 1997913580}
-  - {fileID: 850666153}
-  - {fileID: 1873791103}
-  AvailableSnusNight4:
-  - {fileID: 613976288}
-  - {fileID: 1873791103}
-  - {fileID: 850666153}
-  - {fileID: 592048776}
-  - {fileID: 1301618774}
-  - {fileID: 411811305}
-  - {fileID: 1873791103}
-  AvailableSnusNight5:
-  - {fileID: 1069162762}
-  - {fileID: 1873791103}
-  - {fileID: 1826973126}
-  - {fileID: 1997913580}
-  - {fileID: 910518104}
 --- !u!4 &1320105786
 Transform:
   m_ObjectHideFlags: 0

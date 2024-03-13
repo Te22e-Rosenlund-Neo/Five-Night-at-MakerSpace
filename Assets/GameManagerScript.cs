@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -41,17 +42,15 @@ public class GameManagerScript : MonoBehaviour
     public float[] MaxiNightsTime = new float[5];
 
     [Header("snus")]
-    public List<GameObject> SnusNight1;
-    public List<GameObject> SnusNight2;
-    public List<GameObject> SnusNight3;
-    public List<GameObject> SnusNight4;
-    public List<GameObject> SnusNight5;
-
+    public List<ListInList> Snusar;
+    
     bool reset = false;
-    bool ChangeCurrentNightStuff;
+    public bool ChangeCurrentNightStuff;
 
     void Awake(){
         DontDestroyOnLoad(gameObject);
+        
+        
     }
     void Update(){
         if(GameWin == true){
@@ -71,6 +70,16 @@ public class GameManagerScript : MonoBehaviour
             Hugo.GetComponent<EnemyScript>().AI_Level = HugoNightDifficulties[night-1];
             Martin.GetComponent<MartinScript>().StartTime = MNightsTime[night-1];
             Maxi.GetComponent<MaxiScript>().maxtime = MaxiNightsTime[night-1];
+            foreach(GameObject Esnus in Snusar[night-1].inside){
+                Esnus.SetActive(true);
+            }
+            foreach(var list in Snusar){
+                if(list != Snusar[night-1]){
+                    foreach(GameObject snus in list.inside){
+                        snus.SetActive(false);
+                    }
+                }
+            }
             
         }
 
@@ -85,4 +94,8 @@ public class GameManagerScript : MonoBehaviour
         ChangeCurrentNightStuff = true;
         SceneManager.LoadScene(1);
     }
+}
+[Serializable]
+public class ListInList{
+    public List<GameObject> inside;
 }
