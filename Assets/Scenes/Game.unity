@@ -1247,6 +1247,8 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 184801129}
   ChangeCamera: {fileID: 1101676373}
+  Audio: {fileID: 8300000, guid: db0591bf7facc06438cc24e7569fff5a, type: 3}
+  src: {fileID: 1756225101}
   animator: {fileID: 78107844}
   volume: {fileID: 291562127}
 --- !u!114 &78107846
@@ -2873,6 +2875,8 @@ MonoBehaviour:
   Player: {fileID: 0}
   ScareFolder: {fileID: 0}
   ChangeCamera: {fileID: 0}
+  Audio: {fileID: 0}
+  src: {fileID: 0}
   animator: {fileID: 0}
   volume: {fileID: 0}
 --- !u!23 &229170423
@@ -4757,6 +4761,8 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1123654657}
   ChangeCamera: {fileID: 1101676373}
+  Audio: {fileID: 8300000, guid: dc52aac1ed689aa4199d122b48aec448, type: 3}
+  src: {fileID: 1756225101}
   animator: {fileID: 1308939189}
   volume: {fileID: 291562127}
 --- !u!4 &347713869
@@ -7227,6 +7233,8 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1442188206}
   ChangeCamera: {fileID: 1101676373}
+  Audio: {fileID: 8300000, guid: dc52aac1ed689aa4199d122b48aec448, type: 3}
+  src: {fileID: 1756225101}
   animator: {fileID: 478265760}
   volume: {fileID: 291562127}
 --- !u!114 &478265762
@@ -14779,6 +14787,8 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 352888263}
   ChangeCamera: {fileID: 1101676373}
+  Audio: {fileID: 8300000, guid: 7028852147fc66d4e9012f6a4890c22a, type: 3}
+  src: {fileID: 1756225101}
   animator: {fileID: 1266490122}
   volume: {fileID: 291562127}
 --- !u!1 &1273231755 stripped
@@ -15611,6 +15621,8 @@ MonoBehaviour:
   - {fileID: 821636555}
   - {fileID: 1482083780}
   BalloonboyFocus: {fileID: 585184783}
+  Music: {fileID: 8300000, guid: c484289ab6497b5458992f8ebc71903b, type: 3}
+  src: {fileID: 1756225101}
   start: 0
 --- !u!114 &1308939185
 MonoBehaviour:
@@ -15628,6 +15640,8 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1290164555}
   ChangeCamera: {fileID: 1101676373}
+  Audio: {fileID: 8300000, guid: db0591bf7facc06438cc24e7569fff5a, type: 3}
+  src: {fileID: 1756225101}
   animator: {fileID: 1308939189}
   volume: {fileID: 291562127}
 --- !u!95 &1308939189
@@ -17925,6 +17939,8 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1419514397}
   ChangeCamera: {fileID: 1101676373}
+  Audio: {fileID: 8300000, guid: 7bfd4f8c898f7754bb1b5e20b5a9da59, type: 3}
+  src: {fileID: 1756225101}
   animator: {fileID: 1508894340}
   volume: {fileID: 291562127}
 --- !u!65 &1508894343
@@ -18300,6 +18316,8 @@ MonoBehaviour:
   Player: {fileID: 280725147}
   ScareFolder: {fileID: 1688056107}
   ChangeCamera: {fileID: 1101676373}
+  Audio: {fileID: 8300000, guid: 66c3ebc63713b554a9fa0cd4bb411143, type: 3}
+  src: {fileID: 1756225101}
   animator: {fileID: 1533867428}
   volume: {fileID: 291562127}
 --- !u!65 &1533867431
@@ -20408,6 +20426,135 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -227582623563587124, guid: 09621c2b403b3e54dafa5370c0509fd7, type: 3}
+--- !u!1 &1756225100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1756225102}
+  - component: {fileID: 1756225101}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1756225101
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756225100}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 4.7172585
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1756225102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756225100}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.42, y: 1.0069, z: 6.33}
+  m_LocalScale: {x: 130, y: 130, z: 130}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1757105147 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3690378011567436482, guid: 09621c2b403b3e54dafa5370c0509fd7,
@@ -21133,6 +21280,8 @@ MonoBehaviour:
   Player: {fileID: 0}
   ScareFolder: {fileID: 0}
   ChangeCamera: {fileID: 0}
+  Audio: {fileID: 0}
+  src: {fileID: 0}
   animator: {fileID: 0}
   volume: {fileID: 0}
 --- !u!23 &1855579385
@@ -24509,6 +24658,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 278819636}
   - {fileID: 347713869}
+  - {fileID: 1756225102}
   - {fileID: 263665067}
   - {fileID: 1718984765}
   - {fileID: 1308939181}

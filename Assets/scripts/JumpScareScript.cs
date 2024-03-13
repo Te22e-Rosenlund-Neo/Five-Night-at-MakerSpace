@@ -19,6 +19,8 @@ public GameObject ScareFolder;
 
 public GameObject ChangeCamera;
 
+public AudioClip Audio;
+public AudioSource src;
 
 
 public Animator animator;
@@ -49,6 +51,8 @@ public void JumpScare(){
    GetComponent<EnemyScript>().enabled = false;
 }
 void DeathScene(){
+    src.clip = Audio;
+    src.Play();
     animator.SetBool("Death", true);
     ScareFolder.SetActive(true);
     Debug.Log("Death");
