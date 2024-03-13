@@ -60,6 +60,9 @@ timesincestart -= Time.deltaTime;
           if(BatteryLevel <= 0){
                GetComponent<GameOverScenario>().ShutOff();
           }
+          if(ClockTime >= 360){
+               GameObject.Find("GameManager").GetComponent<GameManagerScript>().GameWin = true;
+          }
 ClockTime += Time.deltaTime;
     }
 

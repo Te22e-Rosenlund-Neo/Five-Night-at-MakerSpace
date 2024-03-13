@@ -2,8 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -46,6 +48,8 @@ public class GameManagerScript : MonoBehaviour
     
     bool reset = false;
     public bool ChangeCurrentNightStuff;
+    public TMP_Text text;
+    
 
     void Awake(){
         DontDestroyOnLoad(gameObject);
@@ -53,10 +57,16 @@ public class GameManagerScript : MonoBehaviour
         
     }
     void Update(){
+        // if(SceneManager.GetActiveScene() == SceneManager.GetSceneAt(0)){
+        //    text.GetComponent<TextMeshProUGUI>().text = "Night - " + PlayerPrefs.GetInt(Key);
+        // }
+
         if(GameWin == true){
             night ++;
             PlayerPrefs.SetInt(Key, night);
             GameWin = false;
+            SceneManager.LoadSceneAsync(2);
+
         }
 
         if(reset == true){
@@ -70,16 +80,15 @@ public class GameManagerScript : MonoBehaviour
             Hugo.GetComponent<EnemyScript>().AI_Level = HugoNightDifficulties[night-1];
             Martin.GetComponent<MartinScript>().StartTime = MNightsTime[night-1];
             Maxi.GetComponent<MaxiScript>().maxtime = MaxiNightsTime[night-1];
-            foreach(GameObject Esnus in Snusar[night-1].inside){
-                Esnus.SetActive(true);
-            }
             foreach(var list in Snusar){
-                if(list != Snusar[night-1]){
                     foreach(GameObject snus in list.inside){
                         snus.SetActive(false);
                     }
                 }
+            foreach(GameObject Esnus in Snusar[night-1].inside){
+                Esnus.SetActive(true);
             }
+            
             
         }
 

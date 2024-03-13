@@ -3598,7 +3598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc621e4f2ec40034baea17f713d7d5b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  night: 0
+  night: 1
   GameWin: 0
   Neo: {fileID: 1508894337}
   Ntime: 6
@@ -3689,6 +3689,7 @@ MonoBehaviour:
     - {fileID: 1826973126}
     - {fileID: 1997913580}
     - {fileID: 910518104}
+  ChangeCurrentNightStuff: 0
 --- !u!4 &278819636
 Transform:
   m_ObjectHideFlags: 0
