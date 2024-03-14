@@ -51,8 +51,10 @@ public void JumpScare(){
    GetComponent<EnemyScript>().enabled = false;
 }
 void DeathScene(){
+    if(!src.isPlaying){
     src.clip = Audio;
     src.Play();
+    }
     animator.SetBool("Death", true);
     ScareFolder.SetActive(true);
     Debug.Log("Death");
