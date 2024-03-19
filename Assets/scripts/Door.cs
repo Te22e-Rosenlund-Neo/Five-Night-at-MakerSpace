@@ -11,15 +11,19 @@ public class Door : MonoBehaviour
     [SerializeField] Vector3 Top;
     [SerializeField] Vector3 Bottom;
     float time = 0;
-
+    
+    public AudioClip Sound;
+    public GameObject ChangeAudio;
     public List<GameObject> ConditionalPoints;
   
     void FixedUpdate(){
         if(time < timeToOpen){
             if(DoorOpen == false){
                 transform.position = Vector3.Lerp(Bottom, Top, time/timeToOpen);
+                ChangeAudio.GetComponent<NouseAudioSc>().NoiseChange(Sound);
             }else{
                 transform.position = Vector3.Lerp(Top, Bottom, time/timeToOpen);
+                ChangeAudio.GetComponent<NouseAudioSc>().NoiseChange(Sound);
             }
             time += Time.deltaTime;
         }

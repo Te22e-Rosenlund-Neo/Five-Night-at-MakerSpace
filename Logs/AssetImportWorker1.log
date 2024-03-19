@@ -15,7 +15,7 @@ C:/Users/neo.rosenlund/Documents/Five-Night-at-MakerSpace
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63989
+61192
 -job-worker-count
 3
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/neo.rosenlund/Documents/Five-Night-at-MakerSpace
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4116] Host "[IP] 192.168.192.1 [Port] 0 [Flags] 2 [Guid] 1848119827 [EditorId] 1848119827 [Version] 1048832 [Id] WindowsEditor(7,5CD225N8XZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [4116] Host "[IP] 192.168.192.1 [Port] 0 [Flags] 2 [Guid] 1848119827 [EditorId] 1848119827 [Version] 1048832 [Id] WindowsEditor(7,5CD225N8XZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [3864] Host "[IP] 172.29.128.1 [Port] 0 [Flags] 2 [Guid] 576292348 [EditorId] 576292348 [Version] 1048832 [Id] WindowsEditor(7,5CD225N8XZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [3864] Host "[IP] 172.29.128.1 [Port] 0 [Flags] 2 [Guid] 576292348 [EditorId] 576292348 [Version] 1048832 [Id] WindowsEditor(7,5CD225N8XZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 [Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 35.05 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 40.15 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.7f1 (0a9195b3d453)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56836
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -95,47 +95,47 @@ Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.038177 seconds.
-- Loaded All Assemblies, in  2.688 seconds
+Registered in 0.041362 seconds.
+- Loaded All Assemblies, in  3.056 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1242 ms
+Android Extension - Scanning For ADB Devices 1119 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  3.747 seconds
-Domain Reload Profiling: 6415ms
-	BeginReloadAssembly (780ms)
+- Finished resetting the current domain, in  3.313 seconds
+Domain Reload Profiling: 6341ms
+	BeginReloadAssembly (872ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (255ms)
-	RebuildNativeTypeToScriptingClass (81ms)
-	initialDomainReloadingComplete (343ms)
-	LoadAllAssembliesAndSetupDomain (1207ms)
-		LoadAssemblies (775ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (360ms)
+	RebuildNativeTypeToScriptingClass (103ms)
+	initialDomainReloadingComplete (366ms)
+	LoadAllAssembliesAndSetupDomain (1324ms)
+		LoadAssemblies (868ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1190ms)
-			TypeCache.Refresh (1183ms)
-				TypeCache.ScanAssembly (1114ms)
+		AnalyzeDomain (1294ms)
+			TypeCache.Refresh (1288ms)
+				TypeCache.ScanAssembly (1204ms)
 			BuildScriptInfoCaches (1ms)
 			ResolveRequiredComponents (2ms)
-	FinalizeReload (3749ms)
+	FinalizeReload (3316ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3389ms)
+		SetupLoadedEditorAssemblies (2935ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2078ms)
-			SetLoadedEditorAssemblies (17ms)
+			InitializePlatformSupportModulesInManaged (1798ms)
+			SetLoadedEditorAssemblies (15ms)
 			BeforeProcessingInitializeOnLoad (41ms)
-			ProcessInitializeOnLoadAttributes (923ms)
-			ProcessInitializeOnLoadMethodAttributes (329ms)
+			ProcessInitializeOnLoadAttributes (811ms)
+			ProcessInitializeOnLoadMethodAttributes (270ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -157,52 +157,52 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  6.072 seconds
-Refreshing native plugins compatible for Editor in 40.51 ms, found 3 plugins.
+- Loaded All Assemblies, in  7.971 seconds
+Refreshing native plugins compatible for Editor in 21.83 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.092 seconds
-Domain Reload Profiling: 11121ms
-	BeginReloadAssembly (1894ms)
+- Finished resetting the current domain, in  4.879 seconds
+Domain Reload Profiling: 12811ms
+	BeginReloadAssembly (1666ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (37ms)
+		DisableScriptedObjects (30ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (134ms)
-	RebuildCommonClasses (264ms)
-	RebuildNativeTypeToScriptingClass (92ms)
-	initialDomainReloadingComplete (267ms)
-	LoadAllAssembliesAndSetupDomain (3510ms)
-		LoadAssemblies (2517ms)
+		CreateAndSetChildDomain (135ms)
+	RebuildCommonClasses (240ms)
+	RebuildNativeTypeToScriptingClass (106ms)
+	initialDomainReloadingComplete (319ms)
+	LoadAllAssembliesAndSetupDomain (5600ms)
+		LoadAssemblies (2712ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1634ms)
-			TypeCache.Refresh (1309ms)
-				TypeCache.ScanAssembly (1181ms)
-			BuildScriptInfoCaches (246ms)
-			ResolveRequiredComponents (62ms)
-	FinalizeReload (5093ms)
+		AnalyzeDomain (3456ms)
+			TypeCache.Refresh (3164ms)
+				TypeCache.ScanAssembly (3043ms)
+			BuildScriptInfoCaches (209ms)
+			ResolveRequiredComponents (70ms)
+	FinalizeReload (4880ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3608ms)
+		SetupLoadedEditorAssemblies (3485ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (135ms)
-			SetLoadedEditorAssemblies (14ms)
-			BeforeProcessingInitializeOnLoad (463ms)
-			ProcessInitializeOnLoadAttributes (1852ms)
-			ProcessInitializeOnLoadMethodAttributes (1104ms)
-			AfterProcessingInitializeOnLoad (38ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (112ms)
+			SetLoadedEditorAssemblies (23ms)
+			BeforeProcessingInitializeOnLoad (397ms)
+			ProcessInitializeOnLoadAttributes (1789ms)
+			ProcessInitializeOnLoadMethodAttributes (1118ms)
+			AfterProcessingInitializeOnLoad (43ms)
+			EditorAssembliesLoaded (2ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (29ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 31.80 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (32ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 30.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 185 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6290 unused Assets / (6.1 MB). Loaded Objects now: 6974.
-Memory consumption went from 203.0 MB to 196.9 MB.
-Total: 57.172300 ms (FindLiveObjects: 2.849700 ms CreateObjectMapping: 3.490100 ms MarkObjects: 36.402100 ms  DeleteObjects: 14.421600 ms)
+Unloading 6291 unused Assets / (6.3 MB). Loaded Objects now: 6975.
+Memory consumption went from 203.1 MB to 196.7 MB.
+Total: 52.650300 ms (FindLiveObjects: 1.664000 ms CreateObjectMapping: 2.692700 ms MarkObjects: 35.751000 ms  DeleteObjects: 12.534600 ms)
 
 ========================================================================
 Received Prepare
@@ -220,146 +220,61 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in 36.431 seconds
-Refreshing native plugins compatible for Editor in 24.06 ms, found 3 plugins.
+- Loaded All Assemblies, in  4.601 seconds
+Refreshing native plugins compatible for Editor in 37.33 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.977 seconds
-Domain Reload Profiling: 41364ms
-	BeginReloadAssembly (22359ms)
+- Finished resetting the current domain, in  6.402 seconds
+Domain Reload Profiling: 10987ms
+	BeginReloadAssembly (968ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (22ms)
+		DisableScriptedObjects (24ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (336ms)
-	RebuildCommonClasses (291ms)
-	RebuildNativeTypeToScriptingClass (101ms)
-	initialDomainReloadingComplete (220ms)
-	LoadAllAssembliesAndSetupDomain (13411ms)
-		LoadAssemblies (34010ms)
+		CreateAndSetChildDomain (243ms)
+	RebuildCommonClasses (217ms)
+	RebuildNativeTypeToScriptingClass (93ms)
+	initialDomainReloadingComplete (155ms)
+	LoadAllAssembliesAndSetupDomain (3151ms)
+		LoadAssemblies (2335ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1020ms)
-			TypeCache.Refresh (31ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (901ms)
-			ResolveRequiredComponents (72ms)
-	FinalizeReload (4981ms)
+		AnalyzeDomain (1333ms)
+			TypeCache.Refresh (58ms)
+				TypeCache.ScanAssembly (11ms)
+			BuildScriptInfoCaches (1161ms)
+			ResolveRequiredComponents (98ms)
+	FinalizeReload (6404ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3541ms)
+		SetupLoadedEditorAssemblies (5101ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (147ms)
-			SetLoadedEditorAssemblies (21ms)
-			BeforeProcessingInitializeOnLoad (462ms)
-			ProcessInitializeOnLoadAttributes (1833ms)
-			ProcessInitializeOnLoadMethodAttributes (1045ms)
-			AfterProcessingInitializeOnLoad (33ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (119ms)
+			SetLoadedEditorAssemblies (20ms)
+			BeforeProcessingInitializeOnLoad (577ms)
+			ProcessInitializeOnLoadAttributes (3389ms)
+			ProcessInitializeOnLoadMethodAttributes (947ms)
+			AfterProcessingInitializeOnLoad (47ms)
+			EditorAssembliesLoaded (2ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (97ms)
-Refreshing native plugins compatible for Editor in 31.75 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (77ms)
+Refreshing native plugins compatible for Editor in 35.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6288 unused Assets / (5.4 MB). Loaded Objects now: 6975.
-Memory consumption went from 176.0 MB to 170.6 MB.
-Total: 52.988700 ms (FindLiveObjects: 2.321500 ms CreateObjectMapping: 3.260700 ms MarkObjects: 36.928200 ms  DeleteObjects: 10.474000 ms)
+Unloading 6289 unused Assets / (5.6 MB). Loaded Objects now: 6976.
+Memory consumption went from 176.0 MB to 170.4 MB.
+Total: 82.142800 ms (FindLiveObjects: 1.958700 ms CreateObjectMapping: 2.580300 ms MarkObjects: 47.802100 ms  DeleteObjects: 29.797700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 1380263.556099 seconds.
-  path: Assets/Sounds/fnaf-1-full-jumpscare-sound.mp3
-  artifactKey: Guid(dc52aac1ed689aa4199d122b48aec448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/fnaf-1-full-jumpscare-sound.mp3 using Guid(dc52aac1ed689aa4199d122b48aec448) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ee1e480fbb2a1b855ada9b16f639d3e') in 0.4774597 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Sounds/scream3_hKT43DU.mp3
-  artifactKey: Guid(7bfd4f8c898f7754bb1b5e20b5a9da59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/scream3_hKT43DU.mp3 using Guid(7bfd4f8c898f7754bb1b5e20b5a9da59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df9d32323cffaf6d7a0f32c31c231585') in 0.0352303 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Sounds/cassidy-cannon-fredbear-jumpscare.mp3
-  artifactKey: Guid(7028852147fc66d4e9012f6a4890c22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/cassidy-cannon-fredbear-jumpscare.mp3 using Guid(7028852147fc66d4e9012f6a4890c22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e04e6de4657f8cc5d648670a1e4f2cf4') in 0.0312502 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Sounds/scary-fnaf.mp3
-  artifactKey: Guid(c484289ab6497b5458992f8ebc71903b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/scary-fnaf.mp3 using Guid(c484289ab6497b5458992f8ebc71903b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b59c1322e13254ac63066e819e72a966') in 0.0229307 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
 Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  7.551 seconds
-Refreshing native plugins compatible for Editor in 12.15 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.649 seconds
-Domain Reload Profiling: 9194ms
-	BeginReloadAssembly (699ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (25ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (112ms)
-	RebuildCommonClasses (210ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (61ms)
-	LoadAllAssembliesAndSetupDomain (6550ms)
-		LoadAssemblies (6085ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (931ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (891ms)
-			ResolveRequiredComponents (21ms)
-	FinalizeReload (1650ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1188ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (42ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (168ms)
-			ProcessInitializeOnLoadAttributes (634ms)
-			ProcessInitializeOnLoadMethodAttributes (326ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (35ms)
-Refreshing native plugins compatible for Editor in 15.91 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 38.67 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6288 unused Assets / (5.6 MB). Loaded Objects now: 6986.
-Memory consumption went from 178.4 MB to 172.8 MB.
-Total: 31.183200 ms (FindLiveObjects: 1.035400 ms CreateObjectMapping: 1.995900 ms MarkObjects: 21.372200 ms  DeleteObjects: 6.777800 ms)
+Unloading 6256 unused Assets / (5.7 MB). Loaded Objects now: 6975.
+Memory consumption went from 175.8 MB to 170.1 MB.
+Total: 64.043800 ms (FindLiveObjects: 2.799600 ms CreateObjectMapping: 1.781700 ms MarkObjects: 46.975000 ms  DeleteObjects: 12.482600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
@@ -378,51 +293,71 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.013 seconds
-Refreshing native plugins compatible for Editor in 14.51 ms, found 3 plugins.
+- Loaded All Assemblies, in  4.223 seconds
+Refreshing native plugins compatible for Editor in 29.24 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.313 seconds
-Domain Reload Profiling: 5302ms
-	BeginReloadAssembly (603ms)
+- Finished resetting the current domain, in  6.153 seconds
+Domain Reload Profiling: 10346ms
+	BeginReloadAssembly (1021ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
+		DisableScriptedObjects (28ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (220ms)
-	RebuildCommonClasses (92ms)
-	RebuildNativeTypeToScriptingClass (27ms)
-	initialDomainReloadingComplete (74ms)
-	LoadAllAssembliesAndSetupDomain (1192ms)
-		LoadAssemblies (949ms)
+		CreateAndSetChildDomain (218ms)
+	RebuildCommonClasses (225ms)
+	RebuildNativeTypeToScriptingClass (85ms)
+	initialDomainReloadingComplete (209ms)
+	LoadAllAssembliesAndSetupDomain (2650ms)
+		LoadAssemblies (2184ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (500ms)
-			TypeCache.Refresh (26ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (443ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (3314ms)
+		AnalyzeDomain (1049ms)
+			TypeCache.Refresh (45ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (922ms)
+			ResolveRequiredComponents (66ms)
+	FinalizeReload (6156ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2603ms)
+		SetupLoadedEditorAssemblies (4702ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (59ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (279ms)
-			ProcessInitializeOnLoadAttributes (1681ms)
-			ProcessInitializeOnLoadMethodAttributes (555ms)
-			AfterProcessingInitializeOnLoad (20ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (244ms)
+			SetLoadedEditorAssemblies (42ms)
+			BeforeProcessingInitializeOnLoad (784ms)
+			ProcessInitializeOnLoadAttributes (2355ms)
+			ProcessInitializeOnLoadMethodAttributes (1221ms)
+			AfterProcessingInitializeOnLoad (52ms)
+			EditorAssembliesLoaded (2ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (46ms)
-Refreshing native plugins compatible for Editor in 8.93 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (95ms)
+Refreshing native plugins compatible for Editor in 53.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6288 unused Assets / (6.1 MB). Loaded Objects now: 6986.
-Memory consumption went from 180.3 MB to 174.2 MB.
-Total: 23.741700 ms (FindLiveObjects: 1.100900 ms CreateObjectMapping: 1.722300 ms MarkObjects: 14.577000 ms  DeleteObjects: 6.340100 ms)
+Unloading 6288 unused Assets / (5.9 MB). Loaded Objects now: 6975.
+Memory consumption went from 177.8 MB to 171.8 MB.
+Total: 84.019800 ms (FindLiveObjects: 2.129800 ms CreateObjectMapping: 4.670800 ms MarkObjects: 53.183700 ms  DeleteObjects: 24.031800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 31.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6257 unused Assets / (5.7 MB). Loaded Objects now: 6976.
+Memory consumption went from 177.7 MB to 172.0 MB.
+Total: 60.003300 ms (FindLiveObjects: 1.922700 ms CreateObjectMapping: 2.745800 ms MarkObjects: 41.094700 ms  DeleteObjects: 14.235300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 33.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6258 unused Assets / (5.2 MB). Loaded Objects now: 6977.
+Memory consumption went from 177.7 MB to 172.5 MB.
+Total: 52.107800 ms (FindLiveObjects: 1.961300 ms CreateObjectMapping: 3.639900 ms MarkObjects: 34.223600 ms  DeleteObjects: 12.280000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
@@ -441,499 +376,373 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.071 seconds
-Refreshing native plugins compatible for Editor in 16.03 ms, found 3 plugins.
+- Loaded All Assemblies, in  4.852 seconds
+Refreshing native plugins compatible for Editor in 103.12 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.883 seconds
-Domain Reload Profiling: 4945ms
-	BeginReloadAssembly (481ms)
+- Finished resetting the current domain, in  6.809 seconds
+Domain Reload Profiling: 11635ms
+	BeginReloadAssembly (1211ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
+		DisableScriptedObjects (42ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (125ms)
-	RebuildCommonClasses (88ms)
+		CreateAndSetChildDomain (270ms)
+	RebuildCommonClasses (250ms)
+	RebuildNativeTypeToScriptingClass (101ms)
+	initialDomainReloadingComplete (174ms)
+	LoadAllAssembliesAndSetupDomain (3086ms)
+		LoadAssemblies (2495ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1244ms)
+			TypeCache.Refresh (41ms)
+				TypeCache.ScanAssembly (3ms)
+			BuildScriptInfoCaches (1117ms)
+			ResolveRequiredComponents (69ms)
+	FinalizeReload (6812ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5250ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (176ms)
+			SetLoadedEditorAssemblies (33ms)
+			BeforeProcessingInitializeOnLoad (1205ms)
+			ProcessInitializeOnLoadAttributes (2684ms)
+			ProcessInitializeOnLoadMethodAttributes (1095ms)
+			AfterProcessingInitializeOnLoad (54ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (105ms)
+Refreshing native plugins compatible for Editor in 34.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6290 unused Assets / (5.6 MB). Loaded Objects now: 6977.
+Memory consumption went from 179.7 MB to 174.1 MB.
+Total: 69.140200 ms (FindLiveObjects: 2.541300 ms CreateObjectMapping: 2.512500 ms MarkObjects: 51.911800 ms  DeleteObjects: 12.168500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  7.207 seconds
+Refreshing native plugins compatible for Editor in 38.28 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.728 seconds
+Domain Reload Profiling: 12904ms
+	BeginReloadAssembly (1262ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (43ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (235ms)
+	RebuildCommonClasses (255ms)
+	RebuildNativeTypeToScriptingClass (113ms)
+	initialDomainReloadingComplete (203ms)
+	LoadAllAssembliesAndSetupDomain (5341ms)
+		LoadAssemblies (3576ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (2418ms)
+			TypeCache.Refresh (99ms)
+				TypeCache.ScanAssembly (3ms)
+			BuildScriptInfoCaches (2238ms)
+			ResolveRequiredComponents (69ms)
+	FinalizeReload (5730ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4190ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (179ms)
+			SetLoadedEditorAssemblies (23ms)
+			BeforeProcessingInitializeOnLoad (1206ms)
+			ProcessInitializeOnLoadAttributes (1689ms)
+			ProcessInitializeOnLoadMethodAttributes (1049ms)
+			AfterProcessingInitializeOnLoad (43ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (89ms)
+Refreshing native plugins compatible for Editor in 39.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6290 unused Assets / (4.0 MB). Loaded Objects now: 6977.
+Memory consumption went from 181.6 MB to 177.6 MB.
+Total: 55.440100 ms (FindLiveObjects: 1.750900 ms CreateObjectMapping: 2.237000 ms MarkObjects: 36.190400 ms  DeleteObjects: 15.257200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 83047.802470 seconds.
+  path: Assets/AmbientAudioSc.cs
+  artifactKey: Guid(837b7a1779a21ca418aa39171974c03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmbientAudioSc.cs using Guid(837b7a1779a21ca418aa39171974c03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f17f531220fb17f86bed7a2b76af7e80') in 0.2263093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  8.787 seconds
+Refreshing native plugins compatible for Editor in 29.54 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.328 seconds
+Domain Reload Profiling: 14051ms
+	BeginReloadAssembly (1750ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (26ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (355ms)
+	RebuildCommonClasses (384ms)
+	RebuildNativeTypeToScriptingClass (162ms)
+	initialDomainReloadingComplete (270ms)
+	LoadAllAssembliesAndSetupDomain (6154ms)
+		LoadAssemblies (5262ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (2006ms)
+			TypeCache.Refresh (106ms)
+				TypeCache.ScanAssembly (5ms)
+			BuildScriptInfoCaches (1734ms)
+			ResolveRequiredComponents (144ms)
+	FinalizeReload (5331ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3833ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (152ms)
+			SetLoadedEditorAssemblies (26ms)
+			BeforeProcessingInitializeOnLoad (531ms)
+			ProcessInitializeOnLoadAttributes (1939ms)
+			ProcessInitializeOnLoadMethodAttributes (1139ms)
+			AfterProcessingInitializeOnLoad (43ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (84ms)
+Refreshing native plugins compatible for Editor in 33.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6290 unused Assets / (4.7 MB). Loaded Objects now: 6979.
+Memory consumption went from 184.1 MB to 179.4 MB.
+Total: 68.110600 ms (FindLiveObjects: 2.286100 ms CreateObjectMapping: 3.067400 ms MarkObjects: 51.557200 ms  DeleteObjects: 11.194400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  6.512 seconds
+Refreshing native plugins compatible for Editor in 28.30 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.226 seconds
+Domain Reload Profiling: 10681ms
+	BeginReloadAssembly (1241ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (35ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (275ms)
+	RebuildCommonClasses (264ms)
+	RebuildNativeTypeToScriptingClass (153ms)
+	initialDomainReloadingComplete (531ms)
+	LoadAllAssembliesAndSetupDomain (4264ms)
+		LoadAssemblies (3717ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1167ms)
+			TypeCache.Refresh (55ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (1005ms)
+			ResolveRequiredComponents (92ms)
+	FinalizeReload (4228ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3009ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (178ms)
+			SetLoadedEditorAssemblies (63ms)
+			BeforeProcessingInitializeOnLoad (442ms)
+			ProcessInitializeOnLoadAttributes (1372ms)
+			ProcessInitializeOnLoadMethodAttributes (919ms)
+			AfterProcessingInitializeOnLoad (34ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (69ms)
+Refreshing native plugins compatible for Editor in 32.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6290 unused Assets / (5.4 MB). Loaded Objects now: 6979.
+Memory consumption went from 186.0 MB to 180.6 MB.
+Total: 60.730400 ms (FindLiveObjects: 2.857800 ms CreateObjectMapping: 3.052400 ms MarkObjects: 44.647200 ms  DeleteObjects: 10.166600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  4.322 seconds
+Refreshing native plugins compatible for Editor in 62.51 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  7.139 seconds
+Domain Reload Profiling: 11434ms
+	BeginReloadAssembly (958ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (32ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (232ms)
+	RebuildCommonClasses (211ms)
+	RebuildNativeTypeToScriptingClass (109ms)
+	initialDomainReloadingComplete (170ms)
+	LoadAllAssembliesAndSetupDomain (2845ms)
+		LoadAssemblies (2207ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1141ms)
+			TypeCache.Refresh (52ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (996ms)
+			ResolveRequiredComponents (79ms)
+	FinalizeReload (7142ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5377ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (164ms)
+			SetLoadedEditorAssemblies (21ms)
+			BeforeProcessingInitializeOnLoad (724ms)
+			ProcessInitializeOnLoadAttributes (3205ms)
+			ProcessInitializeOnLoadMethodAttributes (1192ms)
+			AfterProcessingInitializeOnLoad (70ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (87ms)
+Refreshing native plugins compatible for Editor in 37.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6290 unused Assets / (6.5 MB). Loaded Objects now: 6979.
+Memory consumption went from 187.9 MB to 181.4 MB.
+Total: 63.553000 ms (FindLiveObjects: 1.861200 ms CreateObjectMapping: 2.085700 ms MarkObjects: 46.397000 ms  DeleteObjects: 13.204400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.716 seconds
+Refreshing native plugins compatible for Editor in 7.98 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.668 seconds
+Domain Reload Profiling: 3376ms
+	BeginReloadAssembly (625ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (302ms)
+	RebuildCommonClasses (68ms)
 	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (78ms)
-	LoadAllAssembliesAndSetupDomain (1388ms)
-		LoadAssemblies (1086ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (925ms)
+		LoadAssemblies (771ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (519ms)
-			TypeCache.Refresh (26ms)
+		AnalyzeDomain (381ms)
+			TypeCache.Refresh (20ms)
 				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (453ms)
-			ResolveRequiredComponents (32ms)
-	FinalizeReload (2884ms)
+			BuildScriptInfoCaches (342ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1668ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2175ms)
+		SetupLoadedEditorAssemblies (1275ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (58ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (260ms)
-			ProcessInitializeOnLoadAttributes (1283ms)
-			ProcessInitializeOnLoadMethodAttributes (544ms)
-			AfterProcessingInitializeOnLoad (17ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (42ms)
-Refreshing native plugins compatible for Editor in 15.90 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6288 unused Assets / (5.0 MB). Loaded Objects now: 6986.
-Memory consumption went from 182.3 MB to 177.3 MB.
-Total: 35.824800 ms (FindLiveObjects: 1.195600 ms CreateObjectMapping: 1.787200 ms MarkObjects: 24.458900 ms  DeleteObjects: 8.380700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.735 seconds
-Refreshing native plugins compatible for Editor in 21.13 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.149 seconds
-Domain Reload Profiling: 5876ms
-	BeginReloadAssembly (471ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (22ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (124ms)
-	RebuildCommonClasses (95ms)
-	RebuildNativeTypeToScriptingClass (32ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (1081ms)
-		LoadAssemblies (925ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (387ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (334ms)
-			ResolveRequiredComponents (31ms)
-	FinalizeReload (4150ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3207ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (55ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (566ms)
-			ProcessInitializeOnLoadAttributes (1641ms)
-			ProcessInitializeOnLoadMethodAttributes (884ms)
-			AfterProcessingInitializeOnLoad (48ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (85ms)
-Refreshing native plugins compatible for Editor in 10.34 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6288 unused Assets / (5.4 MB). Loaded Objects now: 6986.
-Memory consumption went from 184.2 MB to 178.8 MB.
-Total: 17.371300 ms (FindLiveObjects: 0.958300 ms CreateObjectMapping: 1.459300 ms MarkObjects: 10.832500 ms  DeleteObjects: 4.118800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.728 seconds
-Refreshing native plugins compatible for Editor in 11.15 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.467 seconds
-Domain Reload Profiling: 4180ms
-	BeginReloadAssembly (464ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (19ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (108ms)
-	RebuildCommonClasses (90ms)
-	RebuildNativeTypeToScriptingClass (43ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (1059ms)
-		LoadAssemblies (933ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (368ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (327ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (2469ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1781ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (126ms)
-			SetLoadedEditorAssemblies (62ms)
-			BeforeProcessingInitializeOnLoad (258ms)
-			ProcessInitializeOnLoadAttributes (753ms)
-			ProcessInitializeOnLoadMethodAttributes (559ms)
-			AfterProcessingInitializeOnLoad (22ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (43ms)
-Refreshing native plugins compatible for Editor in 22.52 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6288 unused Assets / (3.9 MB). Loaded Objects now: 6986.
-Memory consumption went from 186.1 MB to 182.2 MB.
-Total: 34.946900 ms (FindLiveObjects: 1.282100 ms CreateObjectMapping: 3.258700 ms MarkObjects: 23.714700 ms  DeleteObjects: 6.688400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.847 seconds
-Refreshing native plugins compatible for Editor in 9.45 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.110 seconds
-Domain Reload Profiling: 4950ms
-	BeginReloadAssembly (454ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (18ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (119ms)
-	RebuildCommonClasses (100ms)
-	RebuildNativeTypeToScriptingClass (37ms)
-	initialDomainReloadingComplete (68ms)
-	LoadAllAssembliesAndSetupDomain (1180ms)
-		LoadAssemblies (936ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (458ms)
-			TypeCache.Refresh (16ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (411ms)
-			ResolveRequiredComponents (25ms)
-	FinalizeReload (3111ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2473ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (115ms)
-			SetLoadedEditorAssemblies (14ms)
-			BeforeProcessingInitializeOnLoad (333ms)
-			ProcessInitializeOnLoadAttributes (1230ms)
-			ProcessInitializeOnLoadMethodAttributes (572ms)
-			AfterProcessingInitializeOnLoad (208ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (47ms)
-Refreshing native plugins compatible for Editor in 10.04 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6288 unused Assets / (5.8 MB). Loaded Objects now: 6986.
-Memory consumption went from 188.0 MB to 182.2 MB.
-Total: 40.559800 ms (FindLiveObjects: 1.441000 ms CreateObjectMapping: 1.720900 ms MarkObjects: 30.474600 ms  DeleteObjects: 6.921100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.053 seconds
-Refreshing native plugins compatible for Editor in 27.52 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.742 seconds
-Domain Reload Profiling: 4797ms
-	BeginReloadAssembly (503ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (100ms)
-	RebuildCommonClasses (111ms)
-	RebuildNativeTypeToScriptingClass (55ms)
-	initialDomainReloadingComplete (120ms)
-	LoadAllAssembliesAndSetupDomain (1265ms)
-		LoadAssemblies (1063ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (476ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (390ms)
-			ResolveRequiredComponents (64ms)
-	FinalizeReload (2744ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2078ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (86ms)
-			SetLoadedEditorAssemblies (29ms)
-			BeforeProcessingInitializeOnLoad (480ms)
-			ProcessInitializeOnLoadAttributes (878ms)
-			ProcessInitializeOnLoadMethodAttributes (569ms)
-			AfterProcessingInitializeOnLoad (33ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (43ms)
-Refreshing native plugins compatible for Editor in 95.43 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6288 unused Assets / (5.3 MB). Loaded Objects now: 6986.
-Memory consumption went from 189.9 MB to 184.7 MB.
-Total: 37.632400 ms (FindLiveObjects: 1.022400 ms CreateObjectMapping: 2.688500 ms MarkObjects: 27.314400 ms  DeleteObjects: 6.604100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.900 seconds
-Refreshing native plugins compatible for Editor in 12.30 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.317 seconds
-Domain Reload Profiling: 4211ms
-	BeginReloadAssembly (469ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (131ms)
-	RebuildCommonClasses (112ms)
-	RebuildNativeTypeToScriptingClass (29ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (1212ms)
-		LoadAssemblies (897ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (536ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (490ms)
-			ResolveRequiredComponents (26ms)
-	FinalizeReload (2318ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1639ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (58ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (235ms)
-			ProcessInitializeOnLoadAttributes (893ms)
-			ProcessInitializeOnLoadMethodAttributes (428ms)
-			AfterProcessingInitializeOnLoad (19ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (48ms)
-Refreshing native plugins compatible for Editor in 28.44 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6288 unused Assets / (5.4 MB). Loaded Objects now: 6986.
-Memory consumption went from 191.9 MB to 186.5 MB.
-Total: 34.174000 ms (FindLiveObjects: 1.473600 ms CreateObjectMapping: 2.517600 ms MarkObjects: 23.785100 ms  DeleteObjects: 6.395100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.822 seconds
-Refreshing native plugins compatible for Editor in 10.27 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.848 seconds
-Domain Reload Profiling: 4660ms
-	BeginReloadAssembly (469ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (110ms)
-	RebuildCommonClasses (107ms)
-	RebuildNativeTypeToScriptingClass (53ms)
-	initialDomainReloadingComplete (95ms)
-	LoadAllAssembliesAndSetupDomain (1087ms)
-		LoadAssemblies (930ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (395ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (344ms)
-			ResolveRequiredComponents (31ms)
-	FinalizeReload (2849ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2198ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (64ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (335ms)
-			ProcessInitializeOnLoadAttributes (1314ms)
-			ProcessInitializeOnLoadMethodAttributes (457ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (143ms)
+			ProcessInitializeOnLoadAttributes (749ms)
+			ProcessInitializeOnLoadMethodAttributes (330ms)
 			AfterProcessingInitializeOnLoad (15ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (34ms)
-Refreshing native plugins compatible for Editor in 24.75 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 8.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6288 unused Assets / (5.2 MB). Loaded Objects now: 6986.
-Memory consumption went from 193.8 MB to 188.6 MB.
-Total: 37.132300 ms (FindLiveObjects: 4.062900 ms CreateObjectMapping: 2.952200 ms MarkObjects: 23.118200 ms  DeleteObjects: 6.995900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 3033.473976 seconds.
-  path: Assets/model/YodaFolder/T_Yoda_01_Body_C.png
-  artifactKey: Guid(872e94270e34e2d4daa55c2b0329161a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/model/YodaFolder/T_Yoda_01_Body_C.png using Guid(872e94270e34e2d4daa55c2b0329161a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b71672b28e8f6cbcc955916c34c49eda') in 0.593358 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.129 seconds
-Refreshing native plugins compatible for Editor in 10.30 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.948 seconds
-Domain Reload Profiling: 5069ms
-	BeginReloadAssembly (532ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (139ms)
-	RebuildCommonClasses (86ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (103ms)
-	LoadAllAssembliesAndSetupDomain (1372ms)
-		LoadAssemblies (1214ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (436ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (395ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (2948ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2227ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (71ms)
-			SetLoadedEditorAssemblies (11ms)
-			BeforeProcessingInitializeOnLoad (293ms)
-			ProcessInitializeOnLoadAttributes (1347ms)
-			ProcessInitializeOnLoadMethodAttributes (481ms)
-			AfterProcessingInitializeOnLoad (22ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (48ms)
-Refreshing native plugins compatible for Editor in 14.26 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6288 unused Assets / (4.9 MB). Loaded Objects now: 6988.
-Memory consumption went from 195.8 MB to 190.9 MB.
-Total: 26.252600 ms (FindLiveObjects: 1.085200 ms CreateObjectMapping: 1.695400 ms MarkObjects: 18.327900 ms  DeleteObjects: 5.141400 ms)
+Unloading 6290 unused Assets / (5.0 MB). Loaded Objects now: 6979.
+Memory consumption went from 189.8 MB to 184.8 MB.
+Total: 23.849800 ms (FindLiveObjects: 1.090200 ms CreateObjectMapping: 1.296000 ms MarkObjects: 13.465800 ms  DeleteObjects: 7.995700 ms)
 
 Prepare: number of updated asset objects reloaded= 0

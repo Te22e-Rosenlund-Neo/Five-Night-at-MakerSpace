@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -19,6 +20,9 @@ public class EnemyScript : MonoBehaviour
 
     public List<SecondaryPoints> SecondPoints = new();
     public Transform JumpScareNode;
+    public GameObject Vent;
+    public GameObject sound;
+    public AudioClip vententer;
 
     public GameObject Door;
     public int AI_Level;
@@ -53,8 +57,6 @@ public class EnemyScript : MonoBehaviour
                 Transform moveto = RandomPosition();
                 transform.position = moveto.position;
                 transform.rotation = moveto.rotation;
-
-
                 
                     if (JumpScareNode.position == transform.position)
                     {
@@ -79,6 +81,10 @@ public class EnemyScript : MonoBehaviour
                         Debug.Log(points[i].transform.name); 
                         Debug.Log("accessible? " + points[i].GetComponent<PointsAcessiible>().Accessible);
                         CurrentNode = i; 
+
+                        if(points[i].transform == Vent.transform){
+                            sound.GetComponent<NouseAudioSc>().NoiseChange(vententer);
+                        }
                     }else{
                         Debug.Log("failed entry (closed door)");
                         NewPosition = transform;
