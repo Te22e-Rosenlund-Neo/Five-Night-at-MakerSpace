@@ -1310,6 +1310,9 @@ MonoBehaviour:
   - SecPoints:
     - {fileID: 1449286081}
   JumpScareNode: {fileID: 1100045314}
+  Vent: {fileID: 0}
+  sound: {fileID: 0}
+  vententer: {fileID: 0}
   Door: {fileID: 2120006694}
   AI_Level: 4
   StartTime: 4
@@ -2733,7 +2736,7 @@ MonoBehaviour:
   timeToOpen: 0.3
   Top: {x: 1.28, y: 5, z: -2.441917}
   Bottom: {x: 1.28, y: 3.27, z: -2.441917}
-  Sound: {fileID: 0}
+  Close: {fileID: 0}
   ChangeAudio: {fileID: 0}
   ConditionalPoints:
   - {fileID: 1880305729}
@@ -18361,6 +18364,9 @@ MonoBehaviour:
     - {fileID: 1596354875}
     - {fileID: 41960232}
   JumpScareNode: {fileID: 19917151}
+  Vent: {fileID: 0}
+  sound: {fileID: 0}
+  vententer: {fileID: 0}
   Door: {fileID: 2120006694}
   AI_Level: 3
   StartTime: 6
@@ -18738,6 +18744,9 @@ MonoBehaviour:
     - {fileID: 120501603}
     - {fileID: 1964304951}
   JumpScareNode: {fileID: 1255777397}
+  Vent: {fileID: 0}
+  sound: {fileID: 0}
+  vententer: {fileID: 0}
   Door: {fileID: 2120006694}
   AI_Level: 7
   StartTime: 8
@@ -20062,7 +20071,7 @@ MonoBehaviour:
   timeToOpen: 0.3
   Top: {x: -4.68, y: 5.04, z: -2.441917}
   Bottom: {x: -4.68, y: 3.36, z: -2.441917}
-  Sound: {fileID: 0}
+  Close: {fileID: 0}
   ChangeAudio: {fileID: 0}
   ConditionalPoints:
   - {fileID: 920678000}
@@ -24625,11 +24634,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoorOpen: 0
-  timeToOpen: 0.25
+  timeToOpen: 0.4
   Top: {x: 5.186, y: 1.214, z: 8.959}
   Bottom: {x: 4.96, y: 1.214, z: 10.533}
-  Sound: {fileID: 0}
-  ChangeAudio: {fileID: 0}
+  Close: {fileID: 8300000, guid: 6f4f38b35ec7a51458a17d4a4a7dacab, type: 3}
+  ChangeAudio: {fileID: 1151238429}
   ConditionalPoints:
   - {fileID: 19917150}
   - {fileID: 1255777396}

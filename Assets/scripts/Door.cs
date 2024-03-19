@@ -12,7 +12,7 @@ public class Door : MonoBehaviour
     [SerializeField] Vector3 Bottom;
     float time = 0;
     
-    public AudioClip Sound;
+    public AudioClip Close;
     public GameObject ChangeAudio;
     public List<GameObject> ConditionalPoints;
   
@@ -20,10 +20,10 @@ public class Door : MonoBehaviour
         if(time < timeToOpen){
             if(DoorOpen == false){
                 transform.position = Vector3.Lerp(Bottom, Top, time/timeToOpen);
-                ChangeAudio.GetComponent<NouseAudioSc>().NoiseChange(Sound);
+
             }else{
                 transform.position = Vector3.Lerp(Top, Bottom, time/timeToOpen);
-                ChangeAudio.GetComponent<NouseAudioSc>().NoiseChange(Sound);
+                
             }
             time += Time.deltaTime;
         }
@@ -36,6 +36,7 @@ public void ToggleDoor()
      time = 0;
      if(DoorOpen == false){
         DoorOpen = true;
+        ChangeAudio.GetComponent<NouseAudioSc>().NoiseChange(Close);
      }else{
         DoorOpen = false;
     }
