@@ -1313,6 +1313,8 @@ MonoBehaviour:
   Vent: {fileID: 1449286081}
   sound: {fileID: 1151238429}
   vententer: {fileID: 8300000, guid: 10c23bed3f53b2d4a9f27ca73736090f, type: 3}
+  AudioPoint: {fileID: 0}
+  AudioPointSound: {fileID: 0}
   Door: {fileID: 2120006694}
   AI_Level: 4
   StartTime: 4
@@ -8812,7 +8814,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -10507,7 +10509,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 250
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -10545,7 +10547,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -14061,7 +14063,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -14280,7 +14282,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 3.92979
+  MinDistance: 0.8352157
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -14316,7 +14318,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -18521,6 +18523,8 @@ MonoBehaviour:
   Vent: {fileID: 0}
   sound: {fileID: 0}
   vententer: {fileID: 0}
+  AudioPoint: {fileID: 0}
+  AudioPointSound: {fileID: 0}
   Door: {fileID: 2120006694}
   AI_Level: 3
   StartTime: 6
@@ -18901,6 +18905,8 @@ MonoBehaviour:
   Vent: {fileID: 0}
   sound: {fileID: 0}
   vententer: {fileID: 0}
+  AudioPoint: {fileID: 0}
+  AudioPointSound: {fileID: 0}
   Door: {fileID: 2120006694}
   AI_Level: 7
   StartTime: 8
