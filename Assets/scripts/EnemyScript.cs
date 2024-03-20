@@ -23,6 +23,8 @@ public class EnemyScript : MonoBehaviour
     public GameObject Vent;
     public GameObject sound;
     public AudioClip vententer;
+    public GameObject AudioPoint;
+    public AudioClip AudioPointSound;
 
     public GameObject Door;
     public int AI_Level;
