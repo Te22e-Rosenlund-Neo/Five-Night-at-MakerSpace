@@ -5,7 +5,7 @@ using UnityEngine;
 public class AmbientAudioSc : MonoBehaviour
 {
     AudioSource src;
-    public AudioClip[] Ambient = new AudioClip[3];
+    public List<AudioClip> Ambient;
 
     void Start()
     {
@@ -16,7 +16,7 @@ public class AmbientAudioSc : MonoBehaviour
     void Update()
     {
         if(!src.isPlaying){
-            src.clip = Ambient[Random.Range(0, Ambient.Length-1)];
+            src.clip = Ambient[Random.Range(0, Ambient.Count-1)];
             src.Play();
         }
     }

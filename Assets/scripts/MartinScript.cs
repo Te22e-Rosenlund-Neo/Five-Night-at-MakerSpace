@@ -12,11 +12,14 @@ public class MartinScript : MonoBehaviour
     public float TimeDelay = 30f;
     public List<GameObject> martinParts;
     public List<GameObject> CurrentTaskBarStages;
-
     public GameObject Battery;
     int State = 0;
     int TaskState = 0;
     bool allowedDelay = true;
+    [Header("Sfx")]
+    public GameObject ChangeAudio;
+    public AudioClip Finished;
+    
   
     void Start(){
         timer = StartTime;
@@ -44,6 +47,7 @@ public class MartinScript : MonoBehaviour
         timer -= Time.deltaTime;
     }
     void CompletePrint(){
+        ChangeAudio.GetComponent<NouseAudioSc>().NoiseChange(Finished);
         Debug.Log("completed print" + State);
         martinParts[State].SetActive(true);
         TaskState = 0;

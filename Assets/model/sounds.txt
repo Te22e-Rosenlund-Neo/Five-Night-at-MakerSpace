@@ -1,9 +1,6 @@
 SoundsList:
 
 - better jumpscare
-- Ambient
-- door open/close
-- vent crawling
 - different sound depending on where we are
 .drawing sound
 .chair sound
@@ -13,8 +10,6 @@ SoundsList:
 - lights flickering
 - Player Walking
 - snus eating
-- printer
-- printer stop audio
 - scream
 - custom voice lines?
 - phone guy
