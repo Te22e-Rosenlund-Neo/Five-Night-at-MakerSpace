@@ -3801,7 +3801,6 @@ MonoBehaviour:
     - {fileID: 1997913580}
     - {fileID: 910518104}
   ChangeCurrentNightStuff: 0
-  text: {fileID: 0}
 --- !u!4 &278819636
 Transform:
   m_ObjectHideFlags: 0
@@ -16204,7 +16203,7 @@ MonoBehaviour:
   - {fileID: 1482083780}
   BalloonboyFocus: {fileID: 585184783}
   Music: {fileID: 8300000, guid: c484289ab6497b5458992f8ebc71903b, type: 3}
-  src: {fileID: 0}
+  src: {fileID: 1151238432}
   start: 0
 --- !u!114 &1308939185
 MonoBehaviour:
@@ -16223,7 +16222,7 @@ MonoBehaviour:
   ScareFolder: {fileID: 1290164555}
   ChangeCamera: {fileID: 1101676373}
   Audio: {fileID: 8300000, guid: db0591bf7facc06438cc24e7569fff5a, type: 3}
-  src: {fileID: 0}
+  src: {fileID: 1151238432}
   animator: {fileID: 1308939189}
   volume: {fileID: 291562127}
 --- !u!4 &1308939186 stripped
