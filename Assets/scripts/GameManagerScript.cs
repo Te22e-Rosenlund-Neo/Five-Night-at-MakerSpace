@@ -48,30 +48,19 @@ public class GameManagerScript : MonoBehaviour
     
     bool reset = false;
     public bool ChangeCurrentNightStuff;
-    public TMP_Text text;
     
-
-    void Awake(){
-        DontDestroyOnLoad(gameObject);
-        
-        
+    void Start(){
+        night = PlayerPrefs.GetInt(Key);
+        ChangeCurrentNightStuff = true;
     }
     void Update(){
-        // if(SceneManager.GetActiveScene() == SceneManager.GetSceneAt(0)){
-        //    text.GetComponent<TextMeshProUGUI>().text = "Night - " + PlayerPrefs.GetInt(Key);
-        // }
 
         if(GameWin == true){
             night ++;
             PlayerPrefs.SetInt(Key, night);
             GameWin = false;
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadSceneAsync(2);
-
-        }
-
-        if(reset == true){
-            reset = false;
-            night = 1;
         }
         if(ChangeCurrentNightStuff == true){
             ChangeCurrentNightStuff = false;
@@ -92,18 +81,7 @@ public class GameManagerScript : MonoBehaviour
             
         }
 
-    }
-    public void NewGame(){
-        reset = true;
-        ChangeCurrentNightStuff = true;
-        SceneManager.LoadScene(1);
-    }
-    public void Continue(){
-        night = PlayerPrefs.GetInt(Key);
-        ChangeCurrentNightStuff = true;
-        SceneManager.LoadScene(1);
-    }
-}
+    }}
 [Serializable]
 public class ListInList{
     public List<GameObject> inside;
