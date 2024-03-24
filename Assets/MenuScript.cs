@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-public class NightText : MonoBehaviour
+public class MenuScript : MonoBehaviour
 {
     string Key = "NightLoad";
     public TMP_Text NightOutput;
@@ -11,6 +11,7 @@ public class NightText : MonoBehaviour
     {
         NightOutput.text = "Night - " + PlayerPrefs.GetInt(Key).ToString();
     }
+
     
     public void NewGame(){
         PlayerPrefs.SetInt(Key, 1);

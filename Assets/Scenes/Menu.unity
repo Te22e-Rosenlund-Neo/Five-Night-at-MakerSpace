@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 350682935}
   - component: {fileID: 350682934}
   m_Layer: 0
-  m_Name: NightRememberer
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
