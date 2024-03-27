@@ -22,7 +22,6 @@ public GameObject ChangeCamera;
 public AudioClip Audio;
 public AudioSource src;
 
-
 public Animator animator;
 
 public Volume volume;
@@ -55,6 +54,9 @@ void DeathScene(){
     src.clip = Audio;
     src.Play();
     }
+    ChangeCamera.GetComponent<CameraSystem>().CamOn = true;
+    ChangeCamera.GetComponent<CameraSystem>().ToggleCam();
+    ChangeCamera.SetActive(false);
     animator.SetBool("Death", true);
     ScareFolder.SetActive(true);
     Debug.Log("Death");
