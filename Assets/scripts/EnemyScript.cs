@@ -20,9 +20,7 @@ public class EnemyScript : MonoBehaviour
 
     public List<SecondaryPoints> SecondPoints = new();
     public Transform JumpScareNode;
-    public GameObject Vent;
-    public GameObject sound;
-    public AudioClip vententer;
+    public GameObject AudioPointPlace;
     public GameObject AudioPoint;
     public AudioClip AudioPointSound;
 
@@ -84,8 +82,8 @@ public class EnemyScript : MonoBehaviour
                         Debug.Log("accessible? " + points[i].GetComponent<PointsAcessiible>().Accessible);
                         CurrentNode = i; 
 
-                        if(points[i].transform == Vent.transform){
-                            sound.GetComponent<NouseAudioSc>().NoiseChange(vententer);
+                        if(points[i].transform == AudioPointPlace.transform){
+                            AudioPoint.GetComponent<NouseAudioSc>().NoiseChange(AudioPointSound);
                         }
                     }else{
                         Debug.Log("failed entry (closed door)");

@@ -5,7 +5,7 @@ using UnityEngine;
 public class NouseAudioSc : MonoBehaviour
 {
     AudioSource src;
-    bool change = true;
+    bool change = false;
     void Start()
     {
         src = GetComponent<AudioSource>(); 

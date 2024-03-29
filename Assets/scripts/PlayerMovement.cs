@@ -16,10 +16,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection;
     Rigidbody rb;
 
-    public float PlayerHeight;
-    public LayerMask Ground;
-    public float grounddrag;
-
+    public GameObject ventsource;
+    public AudioClip clip;
 
     private void Start(){
         rb = GetComponent<Rigidbody>();
@@ -28,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
     private void Update(){
 
         MyInput();
+        if(Input.GetKeyDown(KeyCode.U)){
+            ventsource.GetComponent<NouseAudioSc>().NoiseChange(clip);
+        }
     }
     private void FixedUpdate(){
         MovePlayer();
