@@ -7,6 +7,7 @@ public class TimeTransition : MonoBehaviour
 {
     public TMP_Text Start;
     public TMP_Text Stop;
+    string key = "NightLoad";
     public float ScaleDifferense = 0.001f;
      float StartNewer;
      float StopNewer = 0;
@@ -29,7 +30,11 @@ public class TimeTransition : MonoBehaviour
         }   
     timer += Time.deltaTime;
     if(timer >= 6){
+        if(PlayerPrefs.GetInt(key) >= 6){
+            SceneManager.LoadSceneAsync(3);
+        }else{
         SceneManager.LoadSceneAsync(0);
+        }
     }
     }
 }

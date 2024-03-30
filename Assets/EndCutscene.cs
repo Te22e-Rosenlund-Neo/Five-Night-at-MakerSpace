@@ -7,6 +7,10 @@ public class EndCutscene : MonoBehaviour
 {
    public float timer = 0; 
    public AudioSource src;
+   string Key = "NightLoad";
+   void Start(){
+    PlayerPrefs.SetInt(Key, 0);
+   }
     void Update()
     {
         if(timer >= 22){
