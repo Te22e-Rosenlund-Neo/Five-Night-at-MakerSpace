@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class GameManagerScript : MonoBehaviour
 {
     //Remembers night when leaving game
-    //acts as a middleground, deathscenes are called from here, 
+    //deathscenes are called from here, 
     //resets everything when trying to play again
     //changes ai difficulty depending on what night we are at
     //sets available snus
@@ -54,7 +54,7 @@ public class GameManagerScript : MonoBehaviour
         ChangeCurrentNightStuff = true;
     }
     void Update(){
-
+//if player wins, we increase which night they are at, saves it and loads win cutscene
         if(GameWin == true){
             night ++;
             PlayerPrefs.SetInt(Key, night);
@@ -62,6 +62,7 @@ public class GameManagerScript : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadSceneAsync(2);
         }
+//if player loads a new night, we change the difficulties of AI on nights
         if(ChangeCurrentNightStuff == true){
             ChangeCurrentNightStuff = false;
             Neo.GetComponent<EnemyScript>().AI_Level = NeoNightDifficulties[night-1];
@@ -69,6 +70,7 @@ public class GameManagerScript : MonoBehaviour
             Hugo.GetComponent<EnemyScript>().AI_Level = HugoNightDifficulties[night-1];
             Martin.GetComponent<MartinScript>().StartTime = MNightsTime[night-1];
             Maxi.GetComponent<MaxiScript>().maxtime = MaxiNightsTime[night-1];
+//Disables all snus, and only activies necessary ones
             foreach(var list in Snusar){
                     foreach(GameObject snus in list.inside){
                         snus.SetActive(false);
@@ -82,6 +84,7 @@ public class GameManagerScript : MonoBehaviour
         }
 
     }}
+//class which allows me to display a list inside a list in the inspector
 [Serializable]
 public class ListInList{
     public List<GameObject> inside;

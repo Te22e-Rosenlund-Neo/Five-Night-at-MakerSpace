@@ -31,14 +31,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     private void FixedUpdate(){
+//moves player smoothly
         MovePlayer();
     }
     
     private void MyInput(){
+//takes player input
         HorizontalInput = Input.GetAxisRaw("Horizontal");
         VerticalInput = Input.GetAxisRaw("Vertical");
     }
     private void MovePlayer(){
+//sets player movement to be their input
         moveDirection = orientation.forward * VerticalInput + orientation.right * HorizontalInput;
         rb.velocity = moveDirection * moveSpeed;
         

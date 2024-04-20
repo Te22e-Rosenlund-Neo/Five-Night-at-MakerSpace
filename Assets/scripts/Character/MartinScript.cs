@@ -26,6 +26,7 @@ public class MartinScript : MonoBehaviour
     }
     void Update()
     {
+//when timer has reached 0  4times, a part of him is completed, if 4 are completed, he breaks loose
         if(timer <= 0){
             foreach(GameObject P in CurrentTaskBarStages){
                 P.SetActive(false);
@@ -46,6 +47,7 @@ public class MartinScript : MonoBehaviour
         
         timer -= Time.deltaTime;
     }
+    //plays a finsihed audio sound, shows that part of him, resets progress on other printers
     void CompletePrint(){
         ChangeAudio.GetComponent<NouseAudioSc>().NoiseChange(Finished);
         Debug.Log("completed print" + State);
@@ -56,6 +58,7 @@ public class MartinScript : MonoBehaviour
         }
     }
     public void DelayProgression(){
+//if player can delay martins progression, then he can click button to do so
         if(allowedDelay == true){
             timer = TimeDelay;
             Battery.GetComponent<BatteryControlHub>().BatteryLevel = Battery.GetComponent<BatteryControlHub>().BatteryLevel * 0.95f;

@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class PointsAcessiible : MonoBehaviour
 {
+//bool that determines if an enemy can teleport to point or not
    public bool Accessible;
 }

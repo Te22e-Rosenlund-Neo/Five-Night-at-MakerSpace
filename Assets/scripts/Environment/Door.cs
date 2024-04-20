@@ -17,6 +17,8 @@ public class Door : MonoBehaviour
     public List<GameObject> ConditionalPoints;
   
     void FixedUpdate(){
+//closes/opens door
+//Lerps between two values, for a certain time
         if(time < timeToOpen){
             if(DoorOpen == false){
                 transform.position = Vector3.Lerp(Bottom, Top, time/timeToOpen);
@@ -33,6 +35,7 @@ public class Door : MonoBehaviour
 }
 public void ToggleDoor()
     {
+//toggles if door should be opened or closed
      time = 0;
      if(DoorOpen == false){
         DoorOpen = true;
@@ -40,6 +43,7 @@ public void ToggleDoor()
      }else{
         DoorOpen = false;
     }
+//Makes movement points past door possible/impossible
     foreach(GameObject point in ConditionalPoints){
         point.GetComponent<PointsAcessiible>().Accessible = !point.GetComponent<PointsAcessiible>().Accessible;
     }

@@ -6,6 +6,7 @@ using UnityEngine;
 public class DontExit : MonoBehaviour
 {   
     public string PlayerTag;
+//if player attempts to exit the main room, he dies!
     void OnTriggerEnter(Collider other)
     {
 

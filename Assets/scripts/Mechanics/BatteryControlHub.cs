@@ -11,6 +11,7 @@ using System;
 
 public class BatteryControlHub : MonoBehaviour
 {
+//script that updates the battery level depending on night 
     public float BatteryLevel = 1000;
 
     public bool CamerasOpen = false;
@@ -34,6 +35,7 @@ public class BatteryControlHub : MonoBehaviour
     void Update(){
      DisplayBattery();
      DisplayTime();
+//set of if statements that depend on if the player is using them or not
         if(CamerasOpen == true){
              Cam = 1;
         }else{
@@ -49,6 +51,7 @@ public class BatteryControlHub : MonoBehaviour
         }else{
              Vent = 0;
         }
+//adds all values for a total count of battery decrease
         int total = Cam + DoorO + Vent + DefaultSpeed;
         
         if(timesincestart <= 0){
@@ -57,9 +60,12 @@ public class BatteryControlHub : MonoBehaviour
         }
 timesincestart -= Time.deltaTime;
 
+
+//triggers death scene
           if(BatteryLevel <= 0){
                GetComponent<GameOverScenario>().ShutOff();
           }
+//checks if player has played for 6min = win
           if(ClockTime >= 360){
                GameObject.Find("GameManager").GetComponent<GameManagerScript>().GameWin = true;
           }
@@ -67,10 +73,12 @@ ClockTime += Time.deltaTime;
     }
 
     void DisplayBattery(){
+//displays the battery level
           int value = Mathf.RoundToInt(BatteryLevel*0.1f);
           BatteryDisplayText.text = value + "%";
     }
     void DisplayTime(){
+//displays time in hours
      float newvalue = Mathf.Floor(ClockTime/60);
           TimeText.text = newvalue + "AM";
     }

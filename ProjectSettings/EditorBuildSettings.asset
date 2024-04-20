@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 0721aff615a7c83469d48601e6cbd8f8
+  - enabled: 1
+    path: Assets/Scenes/EndCutscene.unity
+    guid: 817cdc3bc11ae8e4d959c78e38c14e72
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

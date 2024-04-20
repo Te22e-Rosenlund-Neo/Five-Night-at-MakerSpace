@@ -15,8 +15,9 @@ public class AmbientAudioSc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+//checks if we already are playing a sound, if not, we play another one
         if(!src.isPlaying){
-            src.clip = Ambient[Random.Range(0, Ambient.Count-1)];
+            src.clip = Ambient[0];
             src.Play();
         }
     }

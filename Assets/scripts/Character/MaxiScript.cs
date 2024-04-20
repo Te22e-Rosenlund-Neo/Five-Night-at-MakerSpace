@@ -19,18 +19,20 @@ public class MaxiScript : MonoBehaviour
     public GameObject CurrentWindow;
 
     void Start(){
+//spawns maxi at certain position
         transform.position = MaxiPoints[3].transform.position;
         transform.rotation = MaxiPoints[3].transform.rotation;
+//window parent is to make sure that the window that maxi is at is checked, and not his own position
         CurrentWindow = MaxiPoints[3].GetComponent<WindowHeritage>().WindowParent;
     }
     void Update()
     {
         Animation();
-        
+//if player has opened cams enough, maxi gets angrier
         if(CamCount >= CamCheckMax){
             Counter();
         }
-       
+//can moves maxi and his progress is increased
         if(timer <= 0){
             Stage += 1;
             timer = maxtime;
@@ -41,12 +43,14 @@ public class MaxiScript : MonoBehaviour
                 transform.position = MaxiPoints[MoveRandom].transform.position;
                 transform.rotation = MaxiPoints[MoveRandom].transform.rotation;
                 CurrentWindow = MaxiPoints[MoveRandom].GetComponent<WindowHeritage>().WindowParent;
-            }   
+            }  
+//if he is angry 4 times, he kills you 
             if(Stage >= 4){
                 GetComponent<JumpScareScript>().JumpScare();
             }
         }
     }
+//animation speeds up
     void Animation(){
             animator.SetFloat(AnimName, Stage);
         

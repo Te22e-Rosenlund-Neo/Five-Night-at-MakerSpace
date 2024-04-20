@@ -8,13 +8,7 @@ using UnityEngine.UI;
 
 public class CameraSystem : MonoBehaviour
 {
-    public Camera cam1;
-    public Camera cam2;
-    public Camera cam3;
-    public Camera cam4;
-    public Camera cam5;
-    public Camera cam6;
-    public Camera cam7;
+    public Camera cam1, cam2, cam3, cam4, cam5, cam6, cam7;
     public GameObject Battery;
 
 
@@ -30,7 +24,7 @@ public class CameraSystem : MonoBehaviour
     public bool CamOn = false;
     
     void Start(){
-   
+   //adds all cameras to list, and sets camera on to be false
         AllCameras.Add(cam1);
         AllCameras.Add(cam2);
         AllCameras.Add(cam3);
@@ -39,13 +33,14 @@ public class CameraSystem : MonoBehaviour
         AllCameras.Add(cam6);
         AllCameras.Add(cam7);
         CamPanel.SetActive(false);
-
+//disables all cameras as default and enables players
         foreach(Camera cam in AllCameras){
             cam.enabled = false;
         }
         AllCameras.Add(PlayerCam);
     }
     void Update(){
+//if space is pressed, we open or close the camera
         if(Input.GetKeyDown(KeyCode.Space)){
             ToggleCam();
         }
@@ -57,6 +52,7 @@ public class CameraSystem : MonoBehaviour
     
 
         if(CamOn == false){
+        //disables players main camera and movement script, and shows the new camera view
             CamOn = true;
             SwapCamVariableChange();
             cam1.enabled = true;
@@ -64,6 +60,7 @@ public class CameraSystem : MonoBehaviour
             Player.GetComponent<PlayerMovement>().enabled = false;
             Maxi.GetComponent<MaxiScript>().CamCount += 1;
         }else{
+        //disables all camera view, enables player movement and camera
             CamOn = false;
             SwapToPlayerView();
             CamPanel.SetActive(false);
@@ -71,6 +68,7 @@ public class CameraSystem : MonoBehaviour
         }
     }
     void SwapCamVariableChange(){
+    //disables all cameras, and shows a cursor
         foreach (Camera cam in AllCameras){
             cam.enabled = false;
         }
@@ -79,11 +77,14 @@ public class CameraSystem : MonoBehaviour
     }
 
     public void SwitchCam(int Camera){
+    //when player interacts with camera ui, it changes what the player sees
+    //and the camera that is pressed is shown
         SwapCamVariableChange();
         AllCameras[Camera].enabled = true;
     }
 
     public void SwapToPlayerView(){
+    //disables all other cameras, shows player cam and locks cursor. 
          foreach(Camera cam in AllCameras){
              cam.enabled = false;
         }

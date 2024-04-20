@@ -8,6 +8,7 @@ public class CameraPos : MonoBehaviour
   public Transform cameraPosition;
 
   private void Update(){
+//makes camera follow player
     transform.position = cameraPosition.position;
   }
 }

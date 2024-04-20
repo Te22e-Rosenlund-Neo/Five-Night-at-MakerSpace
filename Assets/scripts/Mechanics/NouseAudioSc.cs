@@ -14,12 +14,14 @@ public class NouseAudioSc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(change == true){
+//Plays noise
+        if(change == true){ 
             src.Play();
             change = false;
         }
     }
     public void NoiseChange(AudioClip clip){
+//is called when an audio should play on distance
         src.clip = clip;
         change = true;
     }

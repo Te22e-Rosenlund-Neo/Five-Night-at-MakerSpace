@@ -49,6 +49,7 @@ public void JumpScare(){
    start = true;
    GetComponent<EnemyScript>().enabled = false;
 }
+//when player gets killed, kills player, enables transition and plays audio
 void DeathScene(){
     if(!src.isPlaying){
     src.clip = Audio;

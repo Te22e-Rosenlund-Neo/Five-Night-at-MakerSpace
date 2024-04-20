@@ -16,6 +16,7 @@ public class DeathScreen : MonoBehaviour
     void Start(){
         text.enabled = false;
     }
+//slowly transitions into a black screen with only text
     void Update(){
         if(triggered == true){
             text.enabled = true;

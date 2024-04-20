@@ -14,7 +14,6 @@ public class SecondaryPoints{
 
 public class EnemyScript : MonoBehaviour
 {
-
     public List<GameObject> points = new();
     
 
@@ -69,19 +68,21 @@ public class EnemyScript : MonoBehaviour
         timer -= Time.deltaTime;
     }
 
-    //randomizes what way the enemy moves 
+    //randomizes what way the enemy should move
     Transform RandomPosition()
     {
+//random point from all points that are possible to move to from the current position
         int RandomTarget = UnityEngine.Random.Range(0, SecondPoints[CurrentNode].SecPoints.Count);
         Transform NewPosition = SecondPoints[CurrentNode].SecPoints[RandomTarget].transform;
 
+//makes sure than point can be accessed (not behind closed door), sets that as new position
         for(int i = 0; i < points.Count; i++){
             if(points[i].transform == NewPosition.transform){
                     if(points[i].GetComponent<PointsAcessiible>().Accessible == true){
                         Debug.Log(points[i].transform.name); 
                         Debug.Log("accessible? " + points[i].GetComponent<PointsAcessiible>().Accessible);
                         CurrentNode = i; 
-
+//should audio be played
                         if(points[i].transform == AudioPointPlace.transform){
                             AudioPoint.GetComponent<NouseAudioSc>().NoiseChange(AudioPointSound);
                         }
@@ -92,8 +93,6 @@ public class EnemyScript : MonoBehaviour
                    
                     }
         }
-        
-
         // Debug.Log(transform.name + CurrentNode);
         // Debug.Log(transform.name + NewPosition);
         return NewPosition;

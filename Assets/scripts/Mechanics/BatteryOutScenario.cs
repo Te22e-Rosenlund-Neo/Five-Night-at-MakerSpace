@@ -9,6 +9,7 @@ public class GameOverScenario : MonoBehaviour
 
    public GameObject BalloonBoy;
 
+//triggers death scene if batery is 0
     public void ShutOff(){
         ChangeCam.SetActive(false);
         Player.SetActive(false);

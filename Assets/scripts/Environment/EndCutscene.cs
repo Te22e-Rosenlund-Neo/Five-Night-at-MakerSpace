@@ -13,6 +13,7 @@ public class EndCutscene : MonoBehaviour
    }
     void Update()
     {
+//dampens volume at the end, and loads new scene after 22 seconds
         if(timer >= 22){
             SceneManager.LoadScene(0);
         }
